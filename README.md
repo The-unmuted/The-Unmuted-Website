@@ -6,6 +6,9 @@ Official bilingual website for The Unmuted, a safety and rights literacy platfor
 
 - Product beta: https://the-unmuted-beta.pages.dev/
 - Languages: English and Simplified Chinese
+- Contact: theunmuted@163.com
+
+The official site presents the current product features, the Safety–Practice–Record–Support framework, team and advisor roles, participated activities, media references, collaboration opportunities, acknowledgements, and nationwide support resources.
 
 ## Local preview
 
@@ -28,4 +31,3 @@ Then open http://127.0.0.1:8080/.
 ## Product status
 
 The website links to an educational beta. Practice choices are not saved, and beta legal content is awaiting final legal review.
-
