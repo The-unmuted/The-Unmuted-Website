@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en" data-language="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0E0E25" />
+  <meta name="description" content="The Unmuted is a bilingual safety and rights literacy platform for women, turning legal knowledge and safety resources into practical action." />
+  <title>The Unmuted | Safety and rights literacy for women</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Noto+Sans+SC:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --rose:        #E11D48;
+      --rose-mid:    #FB7185;
+      --rose-light:  #FFF1F2;
+      --violet:      #7C3AED;
+      --violet-mid:  #A78BFA;
+      --violet-light:#F5F3FF;
+      --amber:       #D97706;
+      --amber-light: #FFFBEB;
+      --teal:        #0F766E;
+      --teal-light:  #F0FDFA;
+      --sky:         #0369A1;
+      --sky-light:   #F0F9FF;
+      --navy:        #1E1B4B;
+      --gray-700:    #374151;
+      --gray-500:    #6B7280;
+      --gray-200:    #E5E7EB;
+      --gray-100:    #F3F4F6;
+      --bg:          #FEFCF9;
+      --white:       #FFFFFF;
+      --shadow-sm:   0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.04);
+      --shadow-md:   0 4px 16px rgba(0,0,0,.08), 0 2px 6px rgba(0,0,0,.04);
+      --shadow-lg:   0 10px 40px rgba(0,0,0,.10), 0 4px 12px rgba(0,0,0,.05);
+      --radius:      1rem;
+      --radius-sm:   .625rem;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', 'Noto Sans SC', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--gray-700);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(254,252,249,.88);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(0,0,0,.06);
+      padding: 0 2rem;
+    }
+    .nav-inner {
+      max-width: 1160px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .nav-logo {
+      display: flex; align-items: center; gap: .75rem;
+      text-decoration: none;
+    }
+    .nav-mark {
+      width: 36px; height: 36px; border-radius: 10px;
+      overflow: hidden; flex-shrink: 0;
+    }
+    .nav-mark img { width: 36px; height: 36px; object-fit: contain; }
+    .nav-name {
+      font-size: .95rem; font-weight: 700; color: var(--navy);
+      line-height: 1.1;
+    }
+    .nav-name span { display: block; font-size: .72rem; font-weight: 500; color: var(--gray-500); }
+    .nav-right { display: flex; align-items: center; gap: 1rem; }
+    .nav-link {
+      font-size: .875rem; font-weight: 500; color: var(--gray-500);
+      text-decoration: none; transition: color .2s;
+    }
+    .nav-link:hover { color: var(--navy); }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: .4rem;
+      background: linear-gradient(135deg, var(--rose) 0%, var(--violet) 100%);
+      color: #fff; font-size: .875rem; font-weight: 600;
+      padding: .55rem 1.25rem; border-radius: 999px;
+      text-decoration: none; border: none; cursor: pointer;
+      box-shadow: 0 2px 8px rgba(225,29,72,.3);
+      transition: opacity .2s, transform .15s;
+    }
+    .btn-primary:hover { opacity: .9; transform: translateY(-1px); }
+    .btn-outline {
+      display: inline-flex; align-items: center; gap: .4rem;
+      border: 1.5px solid var(--gray-200); background: var(--white);
+      color: var(--navy); font-size: .875rem; font-weight: 600;
+      padding: .55rem 1.25rem; border-radius: 999px;
+      text-decoration: none; cursor: pointer;
+      transition: border-color .2s, transform .15s;
+    }
+    .btn-outline:hover { border-color: var(--violet-mid); transform: translateY(-1px); }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(145deg, var(--rose-light) 0%, #FEF3F8 35%, var(--violet-light) 100%);
+      padding: 7rem 2rem 5rem;
+      overflow: hidden; position: relative;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 60% 50% at 70% 50%, rgba(167,139,250,.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-inner {
+      max-width: 1160px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 420px; gap: 4rem; align-items: center;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: .5rem;
+      background: var(--white); border: 1px solid var(--gray-200);
+      border-radius: 999px; padding: .35rem .9rem;
+      font-size: .78rem; font-weight: 600; color: var(--violet);
+      box-shadow: var(--shadow-sm); margin-bottom: 1.5rem;
+    }
+    .hero-badge-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--rose); animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.6;transform:scale(1.3)} }
+    .hero h1 {
+      font-size: clamp(2.4rem, 5vw, 3.6rem);
+      font-weight: 900; color: var(--navy);
+      line-height: 1.1; letter-spacing: -.03em;
+      margin-bottom: .5rem;
+    }
+    .hero h1 em { font-style: normal; color: var(--rose); }
+    .hero-sub {
+      font-size: clamp(1rem, 2vw, 1.15rem);
+      font-weight: 400; color: var(--gray-500);
+      margin-bottom: 1.5rem; max-width: 520px; line-height: 1.7;
+    }
+    .hero-sub strong { color: var(--gray-700); font-weight: 600; }
+    .hero-actions { display: flex; gap: .75rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
+    .btn-hero {
+      display: inline-flex; align-items: center; gap: .5rem;
+      background: linear-gradient(135deg, var(--rose) 0%, var(--violet) 100%);
+      color: #fff; font-size: 1rem; font-weight: 700;
+      padding: .85rem 2rem; border-radius: 999px;
+      text-decoration: none; border: none; cursor: pointer;
+      box-shadow: 0 4px 20px rgba(225,29,72,.35);
+      transition: transform .15s, box-shadow .15s;
+    }
+    .btn-hero:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(225,29,72,.4); }
+    .btn-hero-outline {
+      display: inline-flex; align-items: center; gap: .5rem;
+      border: 2px solid rgba(30,27,75,.15); background: rgba(255,255,255,.7);
+      backdrop-filter: blur(4px);
+      color: var(--navy); font-size: 1rem; font-weight: 700;
+      padding: .85rem 2rem; border-radius: 999px;
+      text-decoration: none; cursor: pointer;
+      transition: background .2s, border-color .2s, transform .15s;
+    }
+    .btn-hero-outline:hover { background: var(--white); border-color: var(--violet-mid); transform: translateY(-2px); }
+    .hero-trust { display: flex; align-items: center; gap: .5rem; font-size: .8rem; color: var(--gray-500); }
+    .hero-trust-icons { display: flex; }
+    .hero-trust-icons span {
+      width: 28px; height: 28px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--rose-mid), var(--violet-mid));
+      border: 2px solid var(--white); margin-left: -8px; display: flex;
+      align-items: center; justify-content: center; font-size: .75rem;
+    }
+    .hero-trust-icons span:first-child { margin-left: 0; }
+
+    /* Phone mockup */
+    .hero-phone {
+      position: relative; display: flex; justify-content: center;
+    }
+    .phone-frame {
+      width: 260px; height: 520px;
+      background: var(--white); border-radius: 36px;
+      border: 8px solid #1E1B4B;
+      box-shadow: 0 30px 80px rgba(30,27,75,.25), inset 0 0 0 1px rgba(255,255,255,.1);
+      overflow: hidden; position: relative;
+    }
+    .phone-notch {
+      position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+      width: 80px; height: 24px; background: #1E1B4B;
+      border-radius: 0 0 16px 16px; z-index: 2;
+    }
+    .phone-screen {
+      width: 100%; height: 100%;
+      background: #0F0A1A;
+      overflow: hidden; position: relative;
+    }
+    .phone-screen img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: top;
+      display: block;
+    }
+
+    /* ── STATS ── */
+    .stats {
+      background: var(--white); border-top: 1px solid var(--gray-200);
+      border-bottom: 1px solid var(--gray-200); padding: 2.5rem 2rem;
+    }
+    .stats-inner {
+      max-width: 1160px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; text-align: center;
+    }
+    .stat-num {
+      font-size: 2.2rem; font-weight: 900; color: var(--navy);
+      line-height: 1; margin-bottom: .3rem;
+      background: linear-gradient(135deg, var(--rose) 0%, var(--violet) 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .stat-label { font-size: .85rem; color: var(--gray-500); font-weight: 500; }
+    .stat-label-zh { font-size: .78rem; color: var(--gray-500); }
+
+    /* ── SECTION COMMON ── */
+    section { padding: 5rem 2rem; }
+    .section-inner { max-width: 1160px; margin: 0 auto; }
+    .section-tag {
+      display: inline-block; font-size: .75rem; font-weight: 700;
+      letter-spacing: .08em; text-transform: uppercase;
+      color: var(--rose); margin-bottom: .75rem;
+    }
+    .section-h2 {
+      font-size: clamp(1.75rem, 3.5vw, 2.4rem);
+      font-weight: 900; color: var(--navy);
+      line-height: 1.15; letter-spacing: -.025em; margin-bottom: .75rem;
+    }
+    .section-lead {
+      font-size: 1.05rem; color: var(--gray-500); max-width: 580px; line-height: 1.7;
+    }
+    .section-header { margin-bottom: 3rem; }
+
+    /* ── PROBLEM ── */
+    .problem { background: var(--navy); }
+    .problem .section-tag { color: var(--rose-mid); }
+    .problem .section-h2 { color: #fff; }
+    .problem .section-lead { color: rgba(255,255,255,.55); max-width: 640px; }
+    .problem-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem;
+    }
+    .problem-card {
+      background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.08);
+      border-radius: var(--radius); padding: 1.75rem;
+    }
+    .problem-icon { font-size: 2rem; margin-bottom: 1rem; }
+    .problem-title { font-size: 1.05rem; font-weight: 700; color: #fff; margin-bottom: .5rem; }
+    .problem-title-zh { font-size: .9rem; font-weight: 500; color: rgba(255,255,255,.5); margin-bottom: .75rem; }
+    .problem-body { font-size: .875rem; color: rgba(255,255,255,.55); line-height: 1.65; }
+
+    /* ── FEATURES ── */
+    .features { background: var(--bg); }
+    .features-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem;
+    }
+    .feature-card {
+      background: var(--white); border: 1px solid var(--gray-200);
+      border-radius: var(--radius); padding: 1.75rem;
+      transition: transform .2s, box-shadow .2s;
+      position: relative; overflow: hidden;
+    }
+    .feature-card::before {
+      content: ''; position: absolute; inset: 0;
+      opacity: 0; transition: opacity .2s;
+    }
+    .feature-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+    .feature-card:hover::before { opacity: 1; }
+    .fc-rose::before { background: linear-gradient(135deg, rgba(255,241,242,.8), transparent 60%); }
+    .fc-violet::before { background: linear-gradient(135deg, rgba(245,243,255,.8), transparent 60%); }
+    .fc-teal::before { background: linear-gradient(135deg, rgba(240,253,250,.8), transparent 60%); }
+    .fc-sky::before { background: linear-gradient(135deg, rgba(240,249,255,.8), transparent 60%); }
+    .fc-amber::before { background: linear-gradient(135deg, rgba(255,251,235,.8), transparent 60%); }
+    .feature-icon {
+      width: 48px; height: 48px; border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem; margin-bottom: 1.1rem; position: relative;
+    }
+    .fi-rose { background: var(--rose-light); }
+    .fi-violet { background: var(--violet-light); }
+    .fi-teal { background: var(--teal-light); }
+    .fi-sky { background: var(--sky-light); }
+    .fi-amber { background: var(--amber-light); }
+    .feature-en { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: .15rem; }
+    .feature-zh { font-size: .85rem; font-weight: 500; color: var(--gray-500); margin-bottom: .75rem; }
+    .feature-body { font-size: .875rem; color: var(--gray-500); line-height: 1.65; }
+    .feature-card.span2 { grid-column: span 2; display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; align-items: center; }
+    .span2-text {}
+    .span2-visual {
+      background: linear-gradient(135deg, var(--rose-light), var(--violet-light));
+      border-radius: .75rem; height: 120px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2.5rem;
+    }
+
+    /* ── HOW IT WORKS ── */
+    .how { background: linear-gradient(145deg, #FFF9F0 0%, #FFF1F9 100%); }
+    .how-steps {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;
+      position: relative;
+    }
+    .how-steps::before {
+      content: '';
+      position: absolute; top: 28px; left: calc(33% + 1rem); right: calc(33% + 1rem);
+      height: 2px; background: linear-gradient(90deg, var(--rose-mid), var(--violet-mid));
+    }
+    .how-step { text-align: center; padding: 0 1rem; }
+    .step-num {
+      width: 56px; height: 56px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--rose) 0%, var(--violet) 100%);
+      color: #fff; font-size: 1.3rem; font-weight: 900;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1.25rem; box-shadow: 0 4px 16px rgba(225,29,72,.3);
+    }
+    .step-title-en { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: .2rem; }
+    .step-title-zh { font-size: .85rem; font-weight: 500; color: var(--rose); margin-bottom: .6rem; }
+    .step-body { font-size: .875rem; color: var(--gray-500); line-height: 1.65; }
+
+    /* ── TEAM ── */
+    .team { background: var(--white); }
+    .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+    .team-card {
+      text-align: center; padding: 1.75rem 1rem;
+      border: 1px solid var(--gray-200); border-radius: var(--radius);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .team-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+    .team-avatar {
+      width: 80px; height: 80px; border-radius: 50%;
+      margin: 0 auto 1rem;
+      background: linear-gradient(135deg, var(--rose-light), var(--violet-light));
+      border: 3px solid var(--white); box-shadow: 0 0 0 2px var(--gray-200);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.8rem; overflow: hidden;
+    }
+    .team-avatar img { width: 100%; height: 100%; object-fit: cover; }
+    .team-name-en { font-size: .95rem; font-weight: 700; color: var(--navy); margin-bottom: .15rem; }
+    .team-role { font-size: .78rem; color: var(--violet); font-weight: 600; margin-bottom: .75rem; }
+    .team-gh {
+      display: inline-flex; align-items: center; gap: .3rem;
+      font-size: .72rem; color: var(--gray-500); text-decoration: none;
+      border: 1px solid var(--gray-200); border-radius: 999px;
+      padding: .2rem .65rem; transition: border-color .2s;
+    }
+    .team-gh:hover { border-color: var(--violet-mid); color: var(--violet); }
+
+    /* ── RESOURCES ── */
+    .resources { background: var(--bg); }
+    .res-tabs {
+      display: flex; gap: .5rem; margin-bottom: 2rem;
+    }
+    .res-tab {
+      padding: .5rem 1.25rem; border-radius: 999px;
+      font-size: .875rem; font-weight: 600; cursor: pointer;
+      border: 1.5px solid var(--gray-200); background: var(--white);
+      color: var(--gray-500); transition: all .2s;
+    }
+    .res-tab.active { background: var(--navy); color: #fff; border-color: var(--navy); }
+    .res-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .res-card {
+      background: var(--white); border: 1px solid var(--gray-200);
+      border-radius: var(--radius-sm); padding: 1.25rem;
+      text-decoration: none; display: block;
+      transition: border-color .2s, transform .15s;
+    }
+    .res-card:hover { border-color: var(--violet-mid); transform: translateY(-2px); }
+    .res-cat {
+      font-size: .68rem; font-weight: 700; letter-spacing: .06em;
+      text-transform: uppercase; color: var(--rose); margin-bottom: .4rem;
+    }
+    .res-name { font-size: .9rem; font-weight: 700; color: var(--navy); margin-bottom: .2rem; }
+    .res-desc { font-size: .78rem; color: var(--gray-500); line-height: 1.55; }
+    .res-hotline {
+      display: inline-block; margin-top: .5rem;
+      font-size: .8rem; font-weight: 700; color: var(--violet);
+      background: var(--violet-light); border-radius: 6px; padding: .15rem .5rem;
+    }
+
+    /* ── CTA BANNER ── */
+    .cta-banner {
+      background: linear-gradient(135deg, var(--rose) 0%, var(--violet) 100%);
+      padding: 5rem 2rem; text-align: center;
+    }
+    .cta-banner h2 {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 900; color: #fff; line-height: 1.15;
+      letter-spacing: -.02em; margin-bottom: .5rem;
+    }
+    .cta-banner h2 em { font-style: normal; opacity: .75; }
+    .cta-banner p { color: rgba(255,255,255,.7); font-size: 1rem; margin-bottom: 2rem; }
+    .cta-banner-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn-white {
+      display: inline-flex; align-items: center; gap: .5rem;
+      background: #fff; color: var(--rose);
+      font-size: 1rem; font-weight: 700;
+      padding: .85rem 2rem; border-radius: 999px;
+      text-decoration: none;
+      box-shadow: 0 4px 16px rgba(0,0,0,.15);
+      transition: transform .15s;
+    }
+    .btn-white:hover { transform: translateY(-2px); }
+    .btn-white-outline {
+      display: inline-flex; align-items: center; gap: .5rem;
+      border: 2px solid rgba(255,255,255,.4); background: transparent;
+      color: #fff; font-size: 1rem; font-weight: 700;
+      padding: .85rem 2rem; border-radius: 999px;
+      text-decoration: none; transition: background .2s, transform .15s;
+    }
+    .btn-white-outline:hover { background: rgba(255,255,255,.1); transform: translateY(-2px); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy); padding: 3rem 2rem;
+      border-top: 1px solid rgba(255,255,255,.06);
+    }
+    .footer-inner {
+      max-width: 1160px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: center;
+    }
+    .footer-logo { display: flex; align-items: center; gap: .75rem; margin-bottom: .75rem; }
+    .footer-mark {
+      width: 32px; height: 32px; border-radius: 9px;
+      overflow: hidden; flex-shrink: 0;
+    }
+    .footer-mark img { width: 32px; height: 32px; object-fit: contain; }
+    .footer-name { font-size: .9rem; font-weight: 700; color: #fff; }
+    .footer-name span { display: block; font-size: .7rem; color: rgba(255,255,255,.35); font-weight: 400; }
+    .footer-tagline { font-size: .8rem; color: rgba(255,255,255,.35); line-height: 1.6; max-width: 380px; }
+    .footer-social { display: flex; gap: .75rem; align-items: center; }
+    .social-link {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.1);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem; text-decoration: none; color: rgba(255,255,255,.6);
+      transition: background .2s, color .2s;
+    }
+    .social-link:hover { background: rgba(255,255,255,.14); color: #fff; }
+    .footer-copy {
+      margin-top: 2.5rem; padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,.06);
+      font-size: .75rem; color: rgba(255,255,255,.25);
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .footer-links { display: flex; gap: 1.5rem; }
+    .footer-links a { color: rgba(255,255,255,.3); text-decoration: none; font-size: .75rem; transition: color .2s; }
+    .footer-links a:hover { color: rgba(255,255,255,.6); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-phone { display: none; }
+      .problem-grid, .features-grid, .how-steps, .team-grid { grid-template-columns: 1fr 1fr; }
+      .how-steps::before { display: none; }
+      .feature-card.span2 { grid-column: span 1; grid-template-columns: 1fr; }
+      .span2-visual { display: none; }
+      .stats-inner { grid-template-columns: 1fr; gap: 1.5rem; }
+      .footer-inner { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .problem-grid, .features-grid, .team-grid, .res-grid { grid-template-columns: 1fr; }
+      .how-steps { grid-template-columns: 1fr; }
+      .nav-right .nav-link { display: none; }
+    }
+  </style>
+  <link rel="stylesheet" href="theme.css" />
+  <script src="site.js" defer></script>
+</head>
+<body id="top">
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="#top">
+      <div class="nav-mark"><img src="mark.png" alt="The Unmuted mark" /></div>
+      <div class="nav-name" data-i18n="brandName">The Unmuted</div>
+    </a>
+    <div class="nav-right">
+      <a class="nav-link" href="#features" data-i18n="navFeatures">Features</a>
+      <a class="nav-link" href="#community" data-i18n="navCommunity">Community</a>
+      <a class="nav-link" href="#team" data-i18n="navTeam">Team</a>
+      <a class="nav-link" href="#resources" data-i18n="navResources">Resources</a>
+      <div class="language-switcher" role="group" aria-label="Choose website language" data-i18n-aria="languageLabel">
+        <button class="language-option" type="button" data-language-option="en" aria-pressed="true">EN</button>
+        <button class="language-option" type="button" data-language-option="zh" aria-pressed="false">中文</button>
+      </div>
+      <a class="btn-primary nav-cta" href="https://the-unmuted-beta.pages.dev/" target="_blank" rel="noopener" data-i18n="navCta">Start practicing →</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        <span data-i18n="heroBadge">Safety and rights literacy for women</span>
+      </div>
+      <h1 data-i18n-html="heroTitle">Know your rights<br><em>before</em> you need them.</h1>
+      <p class="hero-sub" data-i18n-html="heroIntro"><strong>The Unmuted</strong> is a bilingual safety and rights literacy platform for women. Through Safety, Practice, Record, and Support, we turn legal knowledge and safety resources into practical action before, during, and after harm.</p>
+      <div class="hero-actions">
+        <a class="btn-hero" href="https://the-unmuted-beta.pages.dev/" target="_blank" rel="noopener" data-i18n="heroPrimary">Start practicing</a>
+        <a class="btn-hero-outline" href="#features" data-i18n="heroSecondary">Explore the platform</a>
+      </div>
+      <div class="hero-trust">
+        <div class="hero-trust-icons" aria-hidden="true">
+          <span>🛡</span><span>🔒</span><span>⚖</span>
+        </div>
+        <span data-i18n="heroTrust">Educational beta · Primarily serving mainland China · Practice choices are not saved</span>
+      </div>
+    </div>
+    <div class="hero-phone">
+      <div class="phone-frame">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="phone-topbar">
+            <div class="phone-brand">
+              <img src="mark.png" alt="" />
+              <div><strong data-i18n="phoneBrand">THE UNMUTED</strong><span data-i18n="phoneTagline">SAFETY · PRACTICE · RECORD · SUPPORT</span></div>
+            </div>
+            <span class="phone-beta">BETA</span>
+          </div>
+          <div class="phone-body">
+            <img class="phone-sos-mark" src="mark.png" alt="The Unmuted safety mark" />
+            <div class="phone-sos-label" data-i18n="phonePracticeLabel">PRACTICE · KNOW YOUR RIGHTS</div>
+            <p data-i18n="phonePracticeLead">Explore a difficult situation before it becomes real.</p>
+            <div class="phone-card">
+              <div class="phone-card-head"><strong data-i18n="phoneChoose">Choose a scenario</strong><span data-i18n="phonePrivate">Private</span></div>
+              <p data-i18n="phoneScenarioLead">See your options, understand the consequences, and learn which rights apply.</p>
+              <div class="phone-scenario-list">
+                <span data-i18n="scenarioDv">Domestic violence</span>
+                <span data-i18n="scenarioWork">Workplace sexual harassment</span>
+                <span data-i18n="scenarioAssault">Sexual assault</span>
+              </div>
+            </div>
+          </div>
+          <div class="phone-tabs" aria-hidden="true">
+            <span data-i18n="phoneHelp">Help</span><span data-i18n="phoneEvidence">Evidence</span><span data-i18n="phoneAid">Aid</span><span class="active" data-i18n="phonePractice">Practice</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUR-PART FRAMEWORK -->
+<div class="stats framework" aria-label="The Unmuted framework" data-i18n-aria="frameworkLabel">
+  <div class="stats-inner">
+    <div>
+      <div class="stat-num" data-i18n="frameworkSafetyTitle">SAFETY</div>
+      <div class="stat-label" data-i18n="frameworkSafetyBody">Prepare trusted contacts and emergency steps</div>
+    </div>
+    <div>
+      <div class="stat-num" data-i18n="frameworkPracticeTitle">PRACTICE</div>
+      <div class="stat-label" data-i18n="frameworkPracticeBody">Rehearse difficult choices before a crisis</div>
+    </div>
+    <div>
+      <div class="stat-num" data-i18n="frameworkRecordTitle">RECORD</div>
+      <div class="stat-label" data-i18n="frameworkRecordBody">Document what happened with private tools</div>
+    </div>
+    <div>
+      <div class="stat-num" data-i18n="frameworkSupportTitle">SUPPORT</div>
+      <div class="stat-label" data-i18n="frameworkSupportBody">Find trusted psychological and legal resources</div>
+    </div>
+  </div>
+</div>
+
+<!-- PROBLEM -->
+<section class="problem">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="problemTag">The information gap</span>
+      <h2 class="section-h2" data-i18n="problemTitle">A crisis is the hardest time to learn your rights.</h2>
+      <p class="section-lead" data-i18n="problemLead">Most people only learn how to respond when they urgently need to. The Unmuted helps women prepare earlier—before fear, pressure, or uncertainty makes every choice harder.</p>
+    </div>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="problem-icon" aria-hidden="true">⏳</div>
+        <div class="problem-title" data-i18n="problemBeforeTitle">Before harm</div>
+        <div class="problem-body" data-i18n="problemBeforeBody">Recognize warning signs, understand consent and boundaries, and learn which rights or protections may apply.</div>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon" aria-hidden="true">🧭</div>
+        <div class="problem-title" data-i18n="problemDuringTitle">During harm</div>
+        <div class="problem-body" data-i18n="problemDuringBody">Understand your choices, contact trusted people, communicate with institutions or authorities, and act according to your situation.</div>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon" aria-hidden="true">⚖️</div>
+        <div class="problem-title" data-i18n="problemAfterTitle">After harm</div>
+        <div class="problem-body" data-i18n="problemAfterBody">Document what happened, preserve relevant information, and find psychological, legal, or community support.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="featuresTag">The platform</span>
+      <h2 class="section-h2" data-i18n="featuresTitle">Turn knowledge into action.</h2>
+      <p class="section-lead" data-i18n="featuresLead">Learn through realistic situations, then use safety, documentation, and support tools when you need them.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card span2 fc-amber">
+        <div class="span2-text">
+          <div class="feature-icon fi-amber" aria-hidden="true">🎮</div>
+          <div class="feature-en" data-i18n="practiceTitle">Rights Practice Simulator</div>
+          <div class="feature-body" data-i18n="practiceBody">Practice difficult choices through scenarios based on real Chinese court judgments. Explore domestic violence, workplace sexual harassment, and sexual assault; understand what each option changes and why it matters. Practice choices are not saved. Beta content is educational and awaiting final legal review.</div>
+        </div>
+        <div class="span2-visual" aria-hidden="true"><span>BEFORE</span><span>DURING</span><span>AFTER</span></div>
+      </div>
+      <div class="feature-card fc-rose">
+        <div class="feature-icon fi-rose" aria-hidden="true">🚨</div>
+        <div class="feature-en" data-i18n="sosTitle">Emergency SOS</div>
+        <div class="feature-body" data-i18n="sosBody">Prepare trusted contacts and a help message before an emergency. When needed, hold for two seconds to add your GPS coordinates and open the message on your phone.</div>
+      </div>
+      <div class="feature-card fc-violet">
+        <div class="feature-icon fi-violet" aria-hidden="true">🔐</div>
+        <div class="feature-en" data-i18n="vaultTitle">Encrypted Evidence Vault</div>
+        <div class="feature-body" data-i18n="vaultBody">Capture or import photos, video, audio, and files. Each item is encrypted on your device with AES-256-GCM, labeled as live capture or later import, and fingerprinted with SHA-256.</div>
+      </div>
+      <div class="feature-card fc-teal">
+        <div class="feature-icon fi-teal" aria-hidden="true">📝</div>
+        <div class="feature-en" data-i18n="notesTitle">Guided Incident Notes</div>
+        <div class="feature-body" data-i18n="notesBody">Situation-specific prompts help you record only what you know. Safety and evidence-preservation guidance appears before the encrypted local note.</div>
+      </div>
+      <div class="feature-card fc-sky">
+        <div class="feature-icon fi-sky" aria-hidden="true">🤝</div>
+        <div class="feature-en" data-i18n="directoryTitle">Verified Support Directory</div>
+        <div class="feature-body" data-i18n="directoryBody">Find mental-health hotlines, rights services, legal-aid centers, and specialist NGOs by city, with service hours and verification dates.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMUNITY -->
+<section class="community" id="community">
+  <div class="section-inner community-layout">
+    <div class="community-copy">
+      <span class="section-tag" data-i18n="communityTag">Early community</span>
+      <h2 class="section-h2" data-i18n="communityTitle">Built with feedback, not assumptions.</h2>
+      <p class="section-lead" data-i18n="communityLead">We are testing the beta with our community and improving the platform through user feedback. We are also building connections with social workers, public-interest lawyers, and women’s mutual-aid and self-defense communities.</p>
+      <div class="recognition-note">
+        <span class="recognition-label" data-i18n="recognitionLabel">Selected program</span>
+        <p data-i18n="recognitionBody">Tencent × BottleDream AI &amp; Society Creative Camp</p>
+      </div>
+    </div>
+    <div class="community-metrics" aria-label="Early community figures" data-i18n-aria="communityMetricsLabel">
+      <div class="community-metric">
+        <strong>100+</strong>
+        <span data-i18n="metricBeta">people in the beta group</span>
+      </div>
+      <div class="community-metric">
+        <strong>1,500+</strong>
+        <span data-i18n="metricViews">Rednote views</span>
+      </div>
+      <div class="community-metric">
+        <strong>350+</strong>
+        <span data-i18n="metricLikes">Rednote likes</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="stagesTag">Before · During · After</span>
+      <h2 class="section-h2" data-i18n="stagesTitle">Know what to do at every stage.</h2>
+      <p class="section-lead" data-i18n="stagesLead">Learn and rehearse early, respond more clearly in the moment, and find documentation and support tools afterward.</p>
+    </div>
+    <div class="how-steps">
+      <div class="how-step">
+        <div class="step-num">1</div>
+        <div class="step-title-en" data-i18n="stageBeforeTitle">Prepare before</div>
+        <div class="step-body" data-i18n="stageBeforeBody">Recognize harassment, understand consent and boundaries, learn which protections may apply, and prepare trusted contacts.</div>
+      </div>
+      <div class="how-step">
+        <div class="step-num">2</div>
+        <div class="step-title-en" data-i18n="stageDuringTitle">Respond during</div>
+        <div class="step-body" data-i18n="stageDuringBody">Use what you practiced to understand your options, contact trusted people, and communicate with institutions or authorities.</div>
+      </div>
+      <div class="how-step">
+        <div class="step-num">3</div>
+        <div class="step-title-en" data-i18n="stageAfterTitle">Record and seek support after</div>
+        <div class="step-body" data-i18n="stageAfterBody">Use encrypted documentation, guided notes, and verified psychological or legal resources according to what you need.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="team" id="team">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="teamTag">Our team</span>
+      <h2 class="section-h2" data-i18n="teamTitle">A small team with clear ownership.</h2>
+      <p class="section-lead" data-i18n="teamLead">Four active members lead the day-to-day work across product, content, design, and outreach. We also thank our advisor for supporting the team as we grow.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-card-header">
+          <div class="team-avatar" aria-hidden="true">K</div>
+          <div class="team-identity">
+            <div class="team-name-en">Katie</div>
+            <div class="team-role-en" data-i18n="katieRole">Product Lead &amp; Competition Coordinator</div>
+          </div>
+        </div>
+        <div class="team-responsibilities-label" data-i18n="responsibilitiesLabel">Core responsibilities</div>
+        <ul class="team-responsibilities">
+          <li><span data-i18n="katieResponsibility1">Feature planning &amp; product iteration</span></li>
+          <li><span data-i18n="katieResponsibility2">Competition applications, materials &amp; progress tracking</span></li>
+        </ul>
+        <a class="team-gh" href="https://github.com/katielin0207-dev" target="_blank" rel="noopener">⌥ GitHub</a>
+      </div>
+      <div class="team-card">
+        <div class="team-card-header">
+          <div class="team-avatar" aria-hidden="true">G</div>
+          <div class="team-identity">
+            <div class="team-name-en">Gushi</div>
+            <div class="team-role-en" data-i18n="gushiRole">Content &amp; Community Manager</div>
+          </div>
+        </div>
+        <div class="team-responsibilities-label" data-i18n="responsibilitiesLabel">Core responsibilities</div>
+        <ul class="team-responsibilities">
+          <li><span data-i18n="gushiResponsibility1">Podcast content planning &amp; production</span></li>
+          <li><span data-i18n="gushiResponsibility2">Xiaohongshu operations &amp; audience growth</span></li>
+        </ul>
+        <a class="team-gh" href="https://github.com/hesta1218-collab" target="_blank" rel="noopener">⌥ GitHub</a>
+      </div>
+      <div class="team-card">
+        <div class="team-card-header">
+          <div class="team-avatar" aria-hidden="true">W</div>
+          <div class="team-identity">
+            <div class="team-name-en">Wendy</div>
+            <div class="team-role-en" data-i18n="wendyRole">Visual Designer &amp; Media Producer</div>
+          </div>
+        </div>
+        <div class="team-responsibilities-label" data-i18n="responsibilitiesLabel">Core responsibilities</div>
+        <ul class="team-responsibilities">
+          <li><span data-i18n="wendyResponsibility1">Product UI/UX design</span></li>
+          <li><span data-i18n="wendyResponsibility2">Official website design &amp; development</span></li>
+          <li><span data-i18n="wendyResponsibility3">English demo videos for international competitions</span></li>
+        </ul>
+        <a class="team-gh" href="https://github.com/DancinWendy" target="_blank" rel="noopener">⌥ GitHub</a>
+      </div>
+      <div class="team-card">
+        <div class="team-card-header">
+          <div class="team-avatar" aria-hidden="true">L</div>
+          <div class="team-identity">
+            <div class="team-name-en">Liz</div>
+            <div class="team-role-en" data-i18n="lizRole">Brand Ambassador &amp; Public Relations</div>
+          </div>
+        </div>
+        <div class="team-responsibilities-label" data-i18n="responsibilitiesLabel">Core responsibilities</div>
+        <ul class="team-responsibilities">
+          <li><span data-i18n="lizResponsibility1">Team representation at talks &amp; pitch events</span></li>
+          <li><span data-i18n="lizResponsibility2">WeChat Official Account content &amp; publishing</span></li>
+        </ul>
+        <a class="team-gh" href="https://github.com/touhouzigei-crypto" target="_blank" rel="noopener">⌥ GitHub</a>
+      </div>
+      <aside class="advisor-card">
+        <div class="advisor-mark" aria-hidden="true">香</div>
+        <div class="advisor-copy">
+          <span class="advisor-label" data-i18n="advisorLabel">Special thanks</span>
+          <h3>香菜</h3>
+          <div class="advisor-role" data-i18n="advisorRole">Advisor</div>
+          <p data-i18n="advisorBody">Currently supporting The Unmuted as an advisor.</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- RESOURCES -->
+<section class="resources" id="resources">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="resourcesTag">Support resources</span>
+      <h2 class="section-h2" data-i18n="resourcesTitle">From practice to real-world support.</h2>
+      <p class="section-lead" data-i18n="resourcesLead">Learning helps you prepare. If you or someone you know needs support now, these mainland China resources offer a practical next step.</p>
+    </div>
+    <div class="res-tabs">
+      <div class="res-tab active" data-i18n="resourcesRegion">🇨🇳 Mainland China resources</div>
+    </div>
+    <div class="res-grid">
+      <a class="res-card" href="tel:12338">
+        <div class="res-cat" data-i18n="resourceHotline">Hotline</div>
+        <div class="res-name" data-i18n="resource12338Name">National Women’s Rights Protection Hotline</div>
+        <div class="res-desc" data-i18n="resource12338Body">The All-China Women’s Federation hotline for reporting domestic violence and seeking support.</div>
+        <div class="res-hotline">📞 12338</div>
+      </a>
+      <a class="res-card" href="tel:110">
+        <div class="res-cat" data-i18n="resourceEmergency">Emergency</div>
+        <div class="res-name" data-i18n="resource110Name">Police emergency line</div>
+        <div class="res-desc" data-i18n="resource110Body">Call 110 during domestic violence or another immediate emergency.</div>
+        <div class="res-hotline">📞 110</div>
+      </a>
+      <a class="res-card" href="https://www.bjyuanzhong.org.cn/" target="_blank" rel="noopener">
+        <div class="res-cat" data-i18n="resourceLegalAid">Legal aid</div>
+        <div class="res-name" data-i18n="resourceYuanzhongName">Beijing Yuanzhong Family and Community Development Service Center</div>
+        <div class="res-desc" data-i18n="resourceYuanzhongBody">Provides nationwide legal aid, psychological support, and case accompaniment for people affected by gender-based violence.</div>
+        <div class="res-hotline">📞 177-0124-2202</div>
+      </a>
+      <a class="res-card" href="tel:12356">
+        <div class="res-cat" data-i18n="resourceMentalHealth">Mental health</div>
+        <div class="res-name" data-i18n="resourceNationalMentalName">National Mental Health Hotline</div>
+        <div class="res-desc" data-i18n="resourceNationalMentalBody">National Health Commission unified hotline for mental health consultation, support, and crisis intervention. Available nationwide, 24/7.</div>
+        <div class="res-hotline">📞 12356</div>
+      </a>
+      <a class="res-card" href="tel:12348">
+        <div class="res-cat" data-i18n="resourceNationalLegalCategory">Legal aid</div>
+        <div class="res-name" data-i18n="resourceNationalLegalName">National Legal Aid Hotline</div>
+        <div class="res-desc" data-i18n="resourceNationalLegalBody">Ministry of Justice public legal-service hotline for legal consultation and information about legal aid. Available nationwide, 24/7.</div>
+        <div class="res-hotline">📞 12348</div>
+      </a>
+      <div class="res-card">
+        <div class="res-cat" data-i18n="resourceLaw">Law</div>
+        <div class="res-name" data-i18n="resourceLawName">Anti-Domestic Violence Law of the People’s Republic of China</div>
+        <div class="res-desc" data-i18n="resourceLawBody">In force since 2016, covering personal safety protection orders, mandatory reporting, and police responsibilities.</div>
+        <div class="res-hotline" data-i18n="resourceReference">Reference</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <h2 data-i18n-html="ctaTitle">Know your rights<br/><em>before you need them.</em></h2>
+  <p data-i18n="ctaBody">Practice difficult situations, understand your choices, and prepare for what to do before, during, and after harm.</p>
+  <div class="cta-banner-btns">
+    <a class="btn-white" href="https://the-unmuted-beta.pages.dev/" target="_blank" rel="noopener" data-i18n="ctaPrimary">Start practicing</a>
+    <button class="btn-white-outline" id="share-site" type="button" data-i18n="ctaShare">Share The Unmuted</button>
+  </div>
+  <p class="share-status" id="share-status" role="status" aria-live="polite"></p>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">
+        <div class="footer-mark"><img src="mark.png" alt="The Unmuted" /></div>
+        <div class="footer-name" data-i18n="brandName">The Unmuted</div>
+      </div>
+      <div class="footer-tagline" data-i18n="footerTagline">A bilingual safety and rights literacy platform for women, primarily serving mainland China.</div>
+    </div>
+    <div class="footer-social">
+      <a class="social-link" href="https://github.com/The-unmuted/The-Unmuted-v2" target="_blank" rel="noopener" title="GitHub" aria-label="The Unmuted on GitHub">🐙</a>
+    </div>
+  </div>
+  <div class="footer-inner footer-copy">
+    <span data-i18n="footerCopyright">© 2026 The Unmuted. All rights reserved.</span>
+    <div class="footer-links">
+      <a href="https://the-unmuted-beta.pages.dev/" target="_blank" rel="noopener" data-i18n="footerBeta">Open the beta</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
