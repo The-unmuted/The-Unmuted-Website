@@ -58,7 +58,7 @@ body {
     var(--background);
   color: var(--foreground);
   font-family: "Outfit", "Noto Sans SC", system-ui, sans-serif;
-  line-height: 1.65;
+  line-height: 1.58;
 }
 
 ::selection {
@@ -181,8 +181,8 @@ nav {
 }
 
 .hero {
-  min-height: 720px;
-  padding: 7.5rem 2rem 6rem;
+  min-height: 620px;
+  padding: 6.25rem 2rem 4.5rem;
   background:
     radial-gradient(circle at 72% 42%, rgba(255, 143, 218, 0.13), transparent 19rem),
     radial-gradient(circle at 82% 32%, rgba(168, 121, 255, 0.12), transparent 30rem),
@@ -207,11 +207,11 @@ nav {
 
 .hero-inner {
   grid-template-columns: minmax(0, 1fr) 400px;
-  gap: 5rem;
+  gap: 3.5rem;
 }
 
 .hero-badge {
-  margin-bottom: 1.75rem;
+  margin-bottom: 1.25rem;
   padding: 0.48rem 0.85rem;
   border: 1px solid rgba(255, 143, 218, 0.36);
   background: var(--primary-soft);
@@ -246,7 +246,7 @@ nav {
 
 .hero-sub {
   max-width: 640px;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   color: var(--muted);
   font-size: clamp(1rem, 1.8vw, 1.12rem);
   line-height: 1.78;
@@ -258,7 +258,7 @@ nav {
 }
 
 .hero-actions {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   gap: 0.75rem;
 }
 
@@ -468,7 +468,7 @@ nav {
 }
 
 .stats {
-  padding: 2.25rem 2rem;
+  padding: 1.5rem 2rem;
   border-top: 0;
   border-bottom: 1px solid var(--border-soft);
   background: rgba(26, 24, 53, 0.56);
@@ -479,7 +479,7 @@ nav {
 }
 
 .stats-inner > div {
-  padding: 0.75rem 2rem;
+  padding: 0.5rem 2rem;
   border-right: 1px solid var(--border-soft);
 }
 
@@ -488,7 +488,7 @@ nav {
 }
 
 .stat-num {
-  margin-bottom: 0.55rem;
+  margin-bottom: 0.35rem;
   background: none;
   color: var(--primary);
   font-family: "JetBrains Mono", monospace;
@@ -511,7 +511,7 @@ nav {
 }
 
 section {
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
 }
 
 .section-tag {
@@ -538,11 +538,11 @@ section {
   max-width: 680px;
   color: var(--muted);
   font-size: 1.02rem;
-  line-height: 1.75;
+  line-height: 1.65;
 }
 
 .section-header {
-  margin-bottom: 3.5rem;
+  margin-bottom: 2.25rem;
 }
 
 .problem {
@@ -573,15 +573,15 @@ section {
 }
 
 .problem-card {
-  min-height: 260px;
-  padding: 2rem;
+  min-height: 215px;
+  padding: 1.5rem;
   border-radius: var(--radius);
 }
 
 .problem-icon {
   width: 44px;
   height: 44px;
-  margin-bottom: 1.4rem;
+  margin-bottom: 1rem;
   display: grid;
   place-items: center;
   border: 1px solid rgba(255, 143, 218, 0.24);
@@ -602,7 +602,7 @@ section {
 
 .problem-body {
   color: var(--muted);
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 .features {
@@ -610,8 +610,8 @@ section {
 }
 
 .feature-card {
-  min-height: 300px;
-  padding: 2rem;
+  min-height: 235px;
+  padding: 1.5rem;
   border-radius: var(--radius);
   transition: border-color 150ms ease-out, transform 150ms ease-out, background-color 150ms ease-out;
 }
@@ -628,7 +628,7 @@ section {
 .feature-icon {
   width: 48px;
   height: 48px;
-  margin-bottom: 1.35rem;
+  margin-bottom: 1rem;
   border: 1px solid rgba(255, 143, 218, 0.28);
   border-radius: 13px;
   background: var(--primary-soft);
@@ -652,7 +652,7 @@ section {
 
 .feature-zh {
   margin-top: 0.1rem;
-  margin-bottom: 0.9rem;
+  margin-bottom: 0.65rem;
   color: var(--primary);
   font-size: 0.82rem;
   font-weight: 600;
@@ -661,16 +661,16 @@ section {
 .feature-body {
   color: var(--muted);
   font-size: 0.86rem;
-  line-height: 1.72;
+  line-height: 1.62;
 }
 
 .feature-card.span2 {
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .span2-visual {
   height: 100%;
-  min-height: 210px;
+  min-height: 165px;
   border: 1px solid rgba(255, 143, 218, 0.2);
   border-radius: 14px;
   background:
@@ -739,7 +739,7 @@ section {
 
 .step-body {
   color: var(--muted);
-  line-height: 1.72;
+  line-height: 1.62;
 }
 
 .team {
@@ -752,8 +752,8 @@ section {
 }
 
 .team-card {
-  min-height: 420px;
-  padding: 1.75rem;
+  min-height: 0;
+  padding: 1.5rem;
   border-radius: var(--radius);
   display: flex;
   flex-direction: column;
@@ -813,7 +813,7 @@ section {
 }
 
 .team-responsibilities-label {
-  margin-top: 1.7rem;
+  margin-top: 1.25rem;
   color: var(--primary);
   font-size: 0.68rem;
   font-weight: 800;
@@ -822,14 +822,14 @@ section {
 }
 
 .team-responsibilities {
-  margin: 0.75rem 0 1.25rem;
+  margin: 0.6rem 0 1rem;
   display: grid;
   gap: 0.55rem;
   list-style: none;
 }
 
 .team-responsibilities li {
-  padding: 0.75rem 0.85rem;
+  padding: 0.6rem 0.75rem;
   border: 1px solid var(--border-soft);
   border-radius: 11px;
   background: var(--surface-soft);
@@ -864,7 +864,7 @@ section {
 
 .advisor-card {
   grid-column: 1 / -1;
-  padding: 1.5rem;
+  padding: 1.25rem;
   display: flex;
   align-items: center;
   gap: 1.25rem;
@@ -944,8 +944,8 @@ section {
 }
 
 .res-card {
-  min-height: 190px;
-  padding: 1.4rem;
+  min-height: 155px;
+  padding: 1.2rem;
   border-radius: var(--radius-sm);
   transition: border-color 150ms ease-out, transform 150ms ease-out, background-color 150ms ease-out;
 }
@@ -972,7 +972,7 @@ section {
 .cta-banner {
   position: relative;
   overflow: hidden;
-  padding: 6rem 2rem;
+  padding: 4.25rem 2rem;
   border-top: 1px solid var(--border-soft);
   border-bottom: 1px solid var(--border-soft);
   background:
@@ -1012,7 +1012,7 @@ section {
 }
 
 footer {
-  padding: 3.5rem 2rem 2rem;
+  padding: 2.75rem 2rem 1.75rem;
   border-top: 0;
   background: #09091b;
 }
@@ -1121,12 +1121,12 @@ footer {
 
 @media (max-width: 900px) {
   .hero {
-    padding-top: 6rem;
+    padding-top: 5.5rem;
   }
 
   .hero-inner {
     grid-template-columns: 1fr;
-    gap: 3.5rem;
+    gap: 2.5rem;
   }
 
   .hero-phone {
@@ -1224,7 +1224,7 @@ footer {
   }
 
   .stats-inner > div {
-    padding: 1.4rem 0;
+    padding: 1rem 0;
     border-right: 0;
     border-bottom: 1px solid var(--border-soft);
   }
@@ -1234,12 +1234,12 @@ footer {
   }
 
   section {
-    padding-top: 4.5rem;
-    padding-bottom: 4.5rem;
+    padding-top: 3.25rem;
+    padding-bottom: 3.25rem;
   }
 
   .section-header {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.75rem;
   }
 
   .feature-card.span2 {
@@ -1351,7 +1351,7 @@ footer {
 .community-layout {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
-  gap: 4rem;
+  gap: 2.5rem;
   align-items: center;
 }
 
@@ -1360,8 +1360,8 @@ footer {
 }
 
 .recognition-note {
-  margin-top: 2rem;
-  padding: 1.1rem 1.2rem;
+  margin-top: 1.5rem;
+  padding: 0.9rem 1rem;
   border: 1px solid rgba(255, 143, 218, 0.28);
   border-radius: var(--radius-sm);
   background: var(--primary-soft);
@@ -1390,8 +1390,8 @@ footer {
 }
 
 .community-metric {
-  min-height: 178px;
-  padding: 1.5rem;
+  min-height: 140px;
+  padding: 1.25rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -1402,7 +1402,7 @@ footer {
 
 .community-metric:first-child {
   grid-row: span 2;
-  min-height: 372px;
+  min-height: 296px;
   justify-content: center;
   background:
     radial-gradient(circle at 50% 28%, rgba(255, 143, 218, 0.13), transparent 11rem),
@@ -1419,7 +1419,7 @@ footer {
 }
 
 .community-metric span {
-  margin-top: 0.75rem;
+  margin-top: 0.55rem;
   color: var(--muted-strong);
   font-size: 0.86rem;
   font-weight: 600;
@@ -1479,7 +1479,7 @@ html[data-language="zh"] body {
 
   .community-layout {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 2rem;
   }
 }
 
@@ -1519,7 +1519,7 @@ html[data-language="zh"] body {
   .community-metric,
   .community-metric:first-child {
     grid-row: auto;
-    min-height: 150px;
+    min-height: 130px;
     justify-content: flex-end;
   }
 
@@ -1541,7 +1541,7 @@ html[data-language="zh"] body {
   grid-column: span 7;
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(180px, 0.8fr);
-  gap: 2rem;
+  gap: 1.5rem;
   align-items: center;
 }
 
@@ -1563,7 +1563,7 @@ html[data-language="zh"] body {
 .journey-layout {
   display: grid;
   grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);
-  gap: 4rem;
+  gap: 2.5rem;
   align-items: start;
 }
 
@@ -1572,7 +1572,7 @@ html[data-language="zh"] body {
 }
 
 .activity-item {
-  padding: 1.6rem 0;
+  padding: 1.2rem 0;
   display: grid;
   grid-template-columns: 64px minmax(0, 1fr);
   gap: 1rem;
@@ -1593,7 +1593,7 @@ html[data-language="zh"] body {
 }
 
 .activity-meta {
-  margin-bottom: 0.55rem;
+  margin-bottom: 0.4rem;
   display: flex;
   align-items: center;
   gap: 0.65rem;
@@ -1622,10 +1622,10 @@ html[data-language="zh"] body {
 
 .activity-item p {
   max-width: 640px;
-  margin-top: 0.45rem;
+  margin-top: 0.35rem;
   color: var(--muted);
   font-size: 0.88rem;
-  line-height: 1.68;
+  line-height: 1.58;
 }
 
 .activity-links {
@@ -1636,7 +1636,7 @@ html[data-language="zh"] body {
 
 .text-link {
   min-height: 40px;
-  margin-top: 0.55rem;
+  margin-top: 0.35rem;
   display: inline-flex;
   align-items: center;
   border-radius: 8px;
@@ -1649,7 +1649,7 @@ html[data-language="zh"] body {
 }
 
 .media-panel {
-  padding: 1.4rem;
+  padding: 1.2rem;
   border: 1px solid rgba(255, 143, 218, 0.28);
   border-radius: var(--radius-lg);
   background:
@@ -1668,7 +1668,7 @@ html[data-language="zh"] body {
 }
 
 .media-panel > h3 {
-  margin: 0.55rem 0 1.35rem;
+  margin: 0.45rem 0 1rem;
   color: var(--foreground);
   font-size: clamp(1.4rem, 3vw, 2rem);
   line-height: 1.16;
@@ -1676,8 +1676,8 @@ html[data-language="zh"] body {
 }
 
 .media-card {
-  min-height: 178px;
-  padding: 1.15rem;
+  min-height: 148px;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   border: 1px solid var(--border);
@@ -1701,14 +1701,14 @@ html[data-language="zh"] body {
 }
 
 .media-card strong {
-  margin-top: 0.6rem;
+  margin-top: 0.45rem;
   color: var(--foreground);
   font-size: 1rem;
   line-height: 1.45;
 }
 
 .media-date {
-  margin-top: 0.45rem;
+  margin-top: 0.35rem;
   color: var(--muted);
   font-family: "JetBrains Mono", monospace;
   font-size: 0.68rem;
@@ -1717,7 +1717,7 @@ html[data-language="zh"] body {
 .media-action {
   min-height: 40px;
   margin-top: auto;
-  padding-top: 0.7rem;
+  padding-top: 0.45rem;
   display: inline-flex;
   align-items: flex-end;
   color: var(--primary);
@@ -1738,8 +1738,8 @@ html[data-language="zh"] body {
 }
 
 .collaboration-card {
-  min-height: 260px;
-  padding: 1.65rem;
+  min-height: 200px;
+  padding: 1.4rem;
   display: flex;
   flex-direction: column;
   border: 1px solid var(--border);
@@ -1756,18 +1756,18 @@ html[data-language="zh"] body {
 }
 
 .collaboration-card p {
-  margin-top: 0.65rem;
+  margin-top: 0.5rem;
   color: var(--muted);
   font-size: 0.87rem;
-  line-height: 1.68;
+  line-height: 1.58;
 }
 
 .contact-panel {
   margin-top: 1rem;
-  padding: 2rem;
+  padding: 1.5rem;
   display: grid;
   grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
-  gap: 3rem;
+  gap: 2rem;
   align-items: center;
   border: 1px solid rgba(255, 143, 218, 0.34);
   border-radius: var(--radius-lg);
@@ -1786,10 +1786,10 @@ html[data-language="zh"] body {
 
 .contact-panel p {
   max-width: 650px;
-  margin-top: 0.75rem;
+  margin-top: 0.55rem;
   color: var(--muted-strong);
   font-size: 0.92rem;
-  line-height: 1.72;
+  line-height: 1.62;
 }
 
 .contact-actions {
@@ -1813,15 +1813,15 @@ html[data-language="zh"] body {
 }
 
 .thanks-block {
-  margin-top: 5rem;
-  padding-top: 4rem;
+  margin-top: 3.5rem;
+  padding-top: 3rem;
   border-top: 1px solid var(--border);
 }
 
 .thanks-heading {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-  gap: 1rem 3rem;
+  gap: 0.8rem 2rem;
   align-items: end;
 }
 
@@ -1844,15 +1844,15 @@ html[data-language="zh"] body {
 }
 
 .thanks-grid {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 0.75rem;
 }
 
 .thanks-card {
-  min-height: 190px;
-  padding: 1.25rem;
+  min-height: 155px;
+  padding: 1rem;
   border: 1px solid var(--border-soft);
   border-radius: var(--radius-sm);
   background: var(--surface-soft);
@@ -1865,10 +1865,10 @@ html[data-language="zh"] body {
 }
 
 .thanks-card p {
-  margin-top: 0.7rem;
+  margin-top: 0.5rem;
   color: var(--muted);
   font-size: 0.78rem;
-  line-height: 1.65;
+  line-height: 1.55;
 }
 
 .footer-social .social-link {
@@ -1902,7 +1902,7 @@ html[data-language="zh"] body {
 @media (max-width: 1000px) {
   .journey-layout {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 2rem;
   }
 
   .media-panel {
@@ -1940,7 +1940,7 @@ html[data-language="zh"] body {
   }
 
   .collaboration-card {
-    min-height: 210px;
+    min-height: 175px;
   }
 
   .contact-panel {
@@ -1989,8 +1989,8 @@ html[data-language="zh"] body {
   }
 
   .thanks-block {
-    margin-top: 4rem;
-    padding-top: 3rem;
+    margin-top: 3rem;
+    padding-top: 2.5rem;
   }
 
   .thanks-heading,

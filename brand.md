@@ -64,6 +64,8 @@ The app logo establishes a pink-to-violet light signature. Use it sparingly:
 
 Use measured, factual, people-centered language. Lead with learning, practice, rights, and preparedness; then explain the tools available if harm occurs. Explain exactly what the product does, what is stored, and what is still in development. Urgency is appropriate only for real safety actions.
 
+For all Chinese website copy, address the reader as `妳`. Use the feminine third-person form `她` for women and for The Unmuted when the platform is personified. Rewrite surrounding phrases when necessary so the public-facing Chinese voice remains consistently feminine. Apply this rule to every new or revised string before publishing.
+
 Avoid hype, fear-based conversion copy, absolute legal or security guarantees, and vague claims such as “completely safe,” “tamper-proof,” or “anonymous” unless they have been independently verified.
 
 Example:
