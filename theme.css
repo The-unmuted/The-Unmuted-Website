@@ -761,6 +761,16 @@ section {
   transition: border-color 150ms ease-out, transform 150ms ease-out, background-color 150ms ease-out;
 }
 
+.team-card:last-child {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 901px) {
+  .team-card:last-child .team-responsibilities {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 .team-card-header {
   display: flex;
   align-items: flex-start;
@@ -860,63 +870,6 @@ section {
   padding: 0.35rem 0.8rem;
   border-color: var(--border);
   color: var(--muted);
-}
-
-.advisor-card {
-  grid-column: 1 / -1;
-  padding: 1.25rem;
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-  border: 1px solid rgba(255, 143, 218, 0.32);
-  border-radius: var(--radius);
-  background: var(--primary-soft);
-}
-
-.advisor-mark {
-  width: 64px;
-  height: 64px;
-  flex: 0 0 64px;
-  display: grid;
-  place-items: center;
-  border: 1px solid rgba(255, 143, 218, 0.35);
-  border-radius: 16px;
-  background: rgba(14, 14, 37, 0.64);
-  color: var(--primary);
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-
-.advisor-copy {
-  min-width: 0;
-}
-
-.advisor-label {
-  color: var(--primary);
-  font-size: 0.68rem;
-  font-weight: 800;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.advisor-copy h3 {
-  margin-top: 0.2rem;
-  color: var(--foreground);
-  font-size: 1.15rem;
-}
-
-.advisor-role {
-  color: var(--muted-strong);
-  font-size: 0.82rem;
-  font-weight: 650;
-}
-
-.advisor-copy p {
-  margin-top: 0.45rem;
-  max-width: 760px;
-  color: var(--muted);
-  font-size: 0.82rem;
-  line-height: 1.6;
 }
 
 .resources {
@@ -1258,10 +1211,6 @@ footer {
 
   .team-card {
     min-height: 0;
-  }
-
-  .advisor-card {
-    align-items: flex-start;
   }
 
   .step-num {
