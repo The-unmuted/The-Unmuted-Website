@@ -792,6 +792,11 @@ section {
   font-weight: 600;
 }
 
+.team-avatar-image {
+  display: block;
+  object-fit: cover;
+}
+
 .team-identity {
   min-width: 0;
 }
