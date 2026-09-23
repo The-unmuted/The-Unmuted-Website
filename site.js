@@ -15,6 +15,11 @@
       heroIntro: "<strong>The Unmuted</strong> is a bilingual safety and rights literacy platform for women. Through Safety, Practice, Record, and Support, we turn legal knowledge and safety resources into practical action before, during, and after harm.",
       heroPrimary: "Start practicing",
       heroSecondary: "Explore the platform",
+      themeSongLabel: "Theme Song",
+      themeSongTitle: "非默The Unmuted · 顾柿不柿",
+      themeSongOpen: "Open NetEase",
+      themeSongHint: "Click to play the theme song: 非默The Unmuted",
+      themeSongButtonAria: "Open the theme song player",
       heroTrust: "Educational beta · Primarily serving mainland China · Practice choices are not saved",
       phoneBrand: "THE UNMUTED",
       phoneTagline: "SAFETY · PRACTICE · RECORD · SUPPORT",
@@ -70,8 +75,9 @@
       recognitionBody: "Selected as one of 40 projects for the Tencent × BottleDream AI & Society Creative Camp",
       communityMetricsLabel: "Early community figures",
       metricBeta: "people in the beta group",
-      metricViews: "Rednote views",
-      metricLikes: "Rednote likes",
+      metricViews: "social media views",
+      metricEngagement: "likes and saves",
+      metricFollowers: "official account followers",
       journeyTag: "Our journey",
       journeyTitle: "Learning in public. Building with others.",
       journeyLead: "Since the first prototype in May 2026, The Unmuted has developed through hackathons, social-impact programs, international challenges, and public conversations.",
@@ -89,6 +95,7 @@
       socialShiftersStatus: "Challenge",
       socialShiftersBody: "Participated with a dedicated project pitch and competition deck.",
       watchPitch: "Watch the pitch ↗",
+      tencentPitch: "Watch the pitch (6:55:10) ↗",
       projectPitch: "Project pitch ↗",
       teamIntro: "Team introduction ↗",
       mediaTag: "In media & conversation",
@@ -100,6 +107,12 @@
       bottleDreamSource: "BottleDream · Recorded conversation",
       bottleDreamTitle: "A conversation about The Unmuted’s origin and development",
       watchConversation: "Watch the conversation ↗",
+      offlinePitchSource: "Offline pitch · WeChat Channels",
+      offlinePitchTitle: "The Unmuted offline pitch recording",
+      watchPitchLink: "Watch the pitch ↗",
+      wechatMpSource: "Official WeChat account",
+      wechatMpTitle: "Follow The Unmuted on WeChat",
+      wechatMpAction: "Scan the QR to follow →",
       stagesTag: "Before · During · After",
       stagesTitle: "Know what to do at every stage.",
       stagesLead: "Learn and rehearse early, respond more clearly in the moment, and find documentation and support tools afterward.",
@@ -147,6 +160,7 @@
       contactBody: "For partnerships, research, legal review, media, or community collaboration, tell us what you are working on and where our work may connect.",
       emailTeam: "Email the team",
       visitRednote: "Visit Rednote",
+      visitWechatArticle: "Read WeChat article",
       thanksTag: "Special thanks",
       thanksTitle: "The first version was shaped by many generous hands.",
       thanksLead: "We are grateful to the people who challenged our thinking, opened doors, and helped the project take form.",
@@ -205,9 +219,14 @@
       languageLabel: "选择网站语言",
       heroBadge: "面向女性的安全与权利素养平台",
       heroTitle: "在需要之前，<br><em>先了解</em>妳的权利。",
-      heroIntro: "<strong>非默</strong>是一个面向女性的双语安全与权利素养平台。我们致力于通过“安全、实践、记录、支持”四个阶段，让法律知识和安全资源转化为危机前、中、后的实际行动。",
+      heroIntro: "<strong>非默</strong>是一个面向女性的双语安全与权利素养平台。我们致力于通过<span class=\"nb\">“安全、实践、记录、支持”</span>四个阶段，让法律知识和安全资源转化为危机前、中、后的<span class=\"nb\">实际行动</span>。",
       heroPrimary: "开始练习",
       heroSecondary: "了解平台",
+      themeSongLabel: "主题曲",
+      themeSongTitle: "非默The Unmuted · 顾柿不柿",
+      themeSongOpen: "网易云打开",
+      themeSongHint: "点击播放主题曲《非默The Unmuted》",
+      themeSongButtonAria: "打开主题曲播放器",
       heroTrust: "教育性内测 · 主要服务中国大陆用户 · 练习选择不会保存",
       phoneBrand: "非默",
       phoneTagline: "安全 · 实践 · 记录 · 支持",
@@ -234,7 +253,7 @@
       frameworkSupportBody: "寻找可信的心理与法律资源",
       problemTag: "信息素养缺口",
       problemTitle: "危机发生时，最难从头了解自己的权利。",
-      problemLead: "大多数人只有在迫切需要时，才开始了解如何应对。非默帮助女性更早准备，避免在恐惧、压力和不确定中第一次面对所有选择。",
+      problemLead: "大多数人只有在迫切需要时，才开始了解如何应对。非默帮助女性更早准备，<span class=\"nb\">避免在恐惧、压力和不确定中</span>第一次面对所有选择。",
       problemBeforeTitle: "伤害发生前",
       problemBeforeBody: "识别危险信号，理解同意与边界，并了解可能适用的权利和保护措施。",
       problemDuringTitle: "伤害发生时",
@@ -263,11 +282,12 @@
       recognitionBody: "作为 40 个项目之一入选腾讯 × BottleDream AI & Society 创益营",
       communityMetricsLabel: "早期社区数据",
       metricBeta: "位内测群成员",
-      metricViews: "次小红书浏览",
-      metricLikes: "次小红书点赞",
+      metricViews: "次社媒浏览量",
+      metricEngagement: "次点赞收藏",
+      metricFollowers: "位官方账号粉丝",
       journeyTag: "项目历程",
       journeyTitle: "公开学习，与更多人一起把她做出来。",
-      journeyLead: "自 2026 年 5 月完成首个原型以来，非默通过黑客松、社会创新项目、国际挑战赛与公开对话持续成长。",
+      journeyLead: "自 2026 年 5 月完成首个原型以来，非默通过黑客松、社会创新项目、国际挑战赛与<span class=\"nb\">公开对话持续成长</span>。",
       activitiesLabel: "非默参与的活动与项目",
       dev3Status: "获奖",
       dev3Date: "2026 年 5 月",
@@ -282,6 +302,7 @@
       socialShiftersStatus: "挑战赛",
       socialShiftersBody: "以专属项目路演与参赛材料参与全球创新挑战赛。",
       watchPitch: "观看路演 ↗",
+      tencentPitch: "观看路演（指路进度条 6:55:10）↗",
       projectPitch: "项目介绍 ↗",
       teamIntro: "团队介绍 ↗",
       mediaTag: "媒体与对话",
@@ -293,6 +314,12 @@
       bottleDreamSource: "BottleDream · 录制对谈",
       bottleDreamTitle: "围绕非默的起点与发展展开对谈",
       watchConversation: "观看对谈 ↗",
+      offlinePitchSource: "线下路演 · 微信视频号",
+      offlinePitchTitle: "非默线下路演现场记录",
+      watchPitchLink: "观看路演 ↗",
+      wechatMpSource: "官方微信公众号",
+      wechatMpTitle: "在微信关注非默",
+      wechatMpAction: "扫描右侧二维码关注 →",
       stagesTag: "事前 · 事中 · 事后",
       stagesTitle: "在每个阶段，都更清楚下一步。",
       stagesLead: "事前学习和预演，事中更清楚地应对，事后获得记录与支持工具。",
@@ -337,11 +364,12 @@
       communityCollabBody: "围绕权利素养教育、公开对话、活动与社区反馈开展负责任的合作。",
       contactTag: "联系我们",
       contactTitle: "和团队开启一次对话。",
-      contactBody: "无论是合作伙伴、研究、法律审阅、媒体还是社区合作，请告诉我们妳正在做什么，以及彼此可以如何连接。",
+      contactBody: "无论是合作伙伴、研究、法律审阅、媒体还是社区合作，请告诉我们妳正在做什么，<span class=\"nb\">以及彼此可以如何连接</span>。",
       emailTeam: "发送邮件",
       visitRednote: "访问小红书",
+      visitWechatArticle: "查看公众号文章",
       thanksTag: "特别感谢",
-      thanksTitle: "许多真诚的帮助，共同塑造了非默的第一个版本。",
+      thanksTitle: "许多真诚的帮助，<span class=\"nb\">共同塑造了</span>非默的<span class=\"nb\">第一个版本</span>。",
       thanksLead: "感谢所有挑战我们思考、打开连接并帮助项目逐步成形的人。",
       thanksYusuBody: "提出事后记录的产品想法，并提醒我们关注身份冒用风险。",
       thanksCaiDuanBody: "帮助连接 BottleDream、寻找工程支持，并协助完成录制对谈。",
@@ -350,7 +378,7 @@
       thanksSunbellaBody: "帮助团队连接深圳一线志愿者。",
       resourcesTag: "支持资源",
       resourcesTitle: "从提前练习，走向现实支持。",
-      resourcesLead: "学习帮助妳提前准备。如果妳或妳认识的人现在需要实际帮助，以下中国大陆资源可以提供进一步支持。",
+      resourcesLead: "学习帮助妳提前准备。如果妳或妳认识的人现在需要实际帮助，以下中国大陆资源可以<span class=\"nb\">提供进一步支持</span>。",
       resourcesRegion: "🇨🇳 中国大陆资源",
       resourceHotline: "热线",
       resource12338Name: "全国妇女权益保护热线",
@@ -393,6 +421,28 @@
   const languageButtons = Array.from(document.querySelectorAll("[data-language-option]"));
   const shareButton = document.getElementById("share-site");
   const shareStatus = document.getElementById("share-status");
+  const themeSongToggle = document.getElementById("theme-song-toggle");
+  const themeSongPanel = document.getElementById("theme-song-panel");
+  const siteData = window.UNMUTED_SITE_DATA || {};
+
+  function applySiteData() {
+    const communityMetrics = siteData.communityMetrics || {};
+    document.querySelectorAll("[data-metric]").forEach((element) => {
+      const value = communityMetrics[element.dataset.metric];
+      if (typeof value !== "string") return;
+
+      element.textContent = value;
+
+      const visualLength = value.replace(/[,\s]/g, "").length;
+      const size = visualLength >= 7
+        ? "clamp(2.45rem, 3.75vw, 3.45rem)"
+        : visualLength >= 5
+          ? "clamp(2.65rem, 4.15vw, 3.75rem)"
+          : "clamp(2.95rem, 4.65vw, 4.15rem)";
+
+      element.style.setProperty("--metric-value-size", size);
+    });
+  }
 
   function setLanguage(language, persist = true) {
     const nextLanguage = language === "zh" ? "zh" : "en";
@@ -418,6 +468,14 @@
       if (typeof value === "string") element.setAttribute("aria-label", value);
     });
 
+    document.querySelectorAll("[data-i18n-tooltip]").forEach((element) => {
+      const value = strings[element.dataset.i18nTooltip];
+      if (typeof value === "string") {
+        element.dataset.tooltip = value;
+        element.setAttribute("title", value);
+      }
+    });
+
     languageButtons.forEach((button) => {
       const isActive = button.dataset.languageOption === nextLanguage;
       button.setAttribute("aria-pressed", String(isActive));
@@ -438,6 +496,26 @@
   languageButtons.forEach((button) => {
     button.addEventListener("click", () => setLanguage(button.dataset.languageOption));
   });
+
+  if (themeSongToggle && themeSongPanel) {
+    let themeSongScrollPosition = { left: 0, top: 0 };
+
+    themeSongToggle.addEventListener("pointerdown", (event) => {
+      event.preventDefault();
+      themeSongScrollPosition = { left: window.scrollX, top: window.scrollY };
+    });
+
+    themeSongToggle.addEventListener("click", () => {
+      const scrollLeft = themeSongScrollPosition.left;
+      const scrollTop = themeSongScrollPosition.top;
+      const isOpen = themeSongToggle.getAttribute("aria-expanded") === "true";
+      themeSongToggle.setAttribute("aria-expanded", String(!isOpen));
+      themeSongPanel.hidden = isOpen;
+      themeSongToggle.blur();
+      window.requestAnimationFrame(() => window.scrollTo(scrollLeft, scrollTop));
+      window.setTimeout(() => window.scrollTo(scrollLeft, scrollTop), 60);
+    });
+  }
 
   if (shareButton && shareStatus) {
     shareButton.addEventListener("click", async () => {
@@ -487,5 +565,6 @@
     if (navigator.language?.toLowerCase().startsWith("zh")) initialLanguage = "zh";
   }
 
+  applySiteData();
   setLanguage(initialLanguage, false);
 })();

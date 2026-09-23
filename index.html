@@ -464,8 +464,9 @@
       .nav-right .nav-link { display: none; }
     }
   </style>
-  <link rel="stylesheet" href="theme.css" />
-  <script src="site.js" defer></script>
+  <link rel="stylesheet" href="theme.css?v=20260914link2" />
+  <script src="site-data.js?v=20260914" defer></script>
+  <script src="site.js?v=20260914link2" defer></script>
 </head>
 <body id="top">
 
@@ -503,12 +504,27 @@
       <div class="hero-actions">
         <a class="btn-hero" href="https://the-unmuted-beta.pages.dev/" target="_blank" rel="noopener" data-i18n="heroPrimary">Start practicing</a>
         <a class="btn-hero-outline" href="#features" data-i18n="heroSecondary">Explore the platform</a>
-      </div>
-      <div class="hero-trust">
-        <div class="hero-trust-icons" aria-hidden="true">
-          <span>🛡</span><span>🔒</span><span>⚖</span>
+        <div class="music-float" id="theme-song-widget">
+          <div class="music-panel" id="theme-song-panel">
+            <div class="music-panel-head">
+              <div>
+                <span data-i18n="themeSongLabel">Theme Song</span>
+                <strong data-i18n="themeSongTitle">非默The Unmuted · 顾柿不柿</strong>
+              </div>
+              <a href="https://music.163.com/song?id=3401130831" target="_blank" rel="noopener" data-i18n="themeSongOpen">Open in NetEase Cloud Music</a>
+            </div>
+            <iframe
+              title="非默The Unmuted theme song"
+              src="https://music.163.com/outchain/player?type=2&id=3401130831&auto=0&height=66"
+              width="100%"
+              height="86"
+              frameborder="no"
+              marginwidth="0"
+              marginheight="0"
+              loading="lazy"
+            ></iframe>
+          </div>
         </div>
-        <span data-i18n="heroTrust">Educational beta · Primarily serving mainland China · Practice choices are not saved</span>
       </div>
     </div>
     <div class="hero-phone">
@@ -573,7 +589,7 @@
     <div class="section-header">
       <span class="section-tag" data-i18n="problemTag">The information gap</span>
       <h2 class="section-h2" data-i18n="problemTitle">A crisis is the hardest time to learn your rights.</h2>
-      <p class="section-lead" data-i18n="problemLead">Most people only learn how to respond when they urgently need to. The Unmuted helps women prepare earlier—before fear, pressure, or uncertainty makes every choice harder.</p>
+      <p class="section-lead" data-i18n-html="problemLead">Most people only learn how to respond when they urgently need to. The Unmuted helps women prepare earlier—before fear, pressure, or uncertainty makes every choice harder.</p>
     </div>
     <div class="problem-grid">
       <div class="problem-card">
@@ -655,16 +671,20 @@
     </div>
     <div class="community-metrics" aria-label="Early community figures" data-i18n-aria="communityMetricsLabel">
       <div class="community-metric">
-        <strong>100+</strong>
+        <strong data-metric="views">20,000+</strong>
+        <span data-i18n="metricViews">social media views</span>
+      </div>
+      <div class="community-metric">
+        <strong data-metric="engagement">3,500+</strong>
+        <span data-i18n="metricEngagement">likes and saves</span>
+      </div>
+      <div class="community-metric">
+        <strong data-metric="followers">650+</strong>
+        <span data-i18n="metricFollowers">official account followers</span>
+      </div>
+      <div class="community-metric">
+        <strong data-metric="betaMembers">150+</strong>
         <span data-i18n="metricBeta">people in the beta group</span>
-      </div>
-      <div class="community-metric">
-        <strong>1,500+</strong>
-        <span data-i18n="metricViews">Rednote views</span>
-      </div>
-      <div class="community-metric">
-        <strong>350+</strong>
-        <span data-i18n="metricLikes">Rednote likes</span>
       </div>
     </div>
   </div>
@@ -676,7 +696,7 @@
     <div class="section-header">
       <span class="section-tag" data-i18n="journeyTag">Our journey</span>
       <h2 class="section-h2" data-i18n="journeyTitle">Learning in public. Building with others.</h2>
-      <p class="section-lead" data-i18n="journeyLead">Since the first prototype in May 2026, The Unmuted has developed through hackathons, social-impact programs, international challenges, and public conversations.</p>
+      <p class="section-lead" data-i18n-html="journeyLead">Since the first prototype in May 2026, The Unmuted has developed through hackathons, social-impact programs, international challenges, and public conversations.</p>
     </div>
     <div class="journey-layout">
       <div class="activity-list" role="list" aria-label="Participated activities" data-i18n-aria="activitiesLabel">
@@ -695,6 +715,7 @@
             <div class="activity-meta"><span class="activity-status" data-i18n="tencentStatus">Selected</span><span data-i18n="tencentDate">June 2026</span></div>
             <h3>Tencent × BottleDream AI &amp; Society Creative Camp</h3>
             <p data-i18n="tencentBody">Selected as one of 40 projects in the action cohort exploring how AI can serve public value.</p>
+            <a class="text-link" href="https://weixin.qq.com/sph/ANhedtw4A3" target="_blank" rel="noopener" data-i18n="tencentPitch">Watch the pitch (6:55:10) ↗</a>
           </div>
         </article>
         <article class="activity-item" role="listitem">
@@ -737,11 +758,24 @@
           <span class="media-date" data-i18n="tencentMediaDate">02 July 2026</span>
           <span class="media-action" data-i18n="readFeature">Read the feature ↗</span>
         </a>
-        <a class="media-card" href="https://www.bilibili.com/video/BV1hcu864ENv/" target="_blank" rel="noopener">
+        <a class="media-card" href="https://weixin.qq.com/sph/Aab6rQ8aGU" target="_blank" rel="noopener">
           <span class="media-source" data-i18n="bottleDreamSource">BottleDream · Recorded conversation</span>
           <strong data-i18n="bottleDreamTitle">A conversation about The Unmuted’s origin and development</strong>
           <span class="media-action" data-i18n="watchConversation">Watch the conversation ↗</span>
         </a>
+        <a class="media-card" href="https://weixin.qq.com/sph/ANhedtw4A3" target="_blank" rel="noopener">
+          <span class="media-source" data-i18n="offlinePitchSource">Offline pitch · WeChat Channels</span>
+          <strong data-i18n="offlinePitchTitle">The Unmuted offline pitch recording</strong>
+          <span class="media-action" data-i18n="watchPitchLink">Watch the pitch ↗</span>
+        </a>
+        <div class="media-card media-card--wechat-mp">
+          <div class="media-card-copy">
+            <span class="media-source" data-i18n="wechatMpSource">Official WeChat account</span>
+            <strong data-i18n="wechatMpTitle">Follow The Unmuted on WeChat</strong>
+            <span class="media-action" data-i18n="wechatMpAction">Scan to follow →</span>
+          </div>
+          <img class="media-card-qr" src="wechat-mp-qr.jpg" alt="The Unmuted WeChat official account QR code" width="120" height="120" loading="lazy" />
+        </div>
       </aside>
     </div>
   </div>
@@ -897,11 +931,12 @@
       <div>
         <span class="contact-kicker" data-i18n="contactTag">Get in touch</span>
         <h3 data-i18n="contactTitle">Start a conversation with the team.</h3>
-        <p data-i18n="contactBody">For partnerships, research, legal review, media, or community collaboration, tell us what you are working on and where our work may connect.</p>
+        <p data-i18n-html="contactBody">For partnerships, research, legal review, media, or community collaboration, tell us what you are working on and where our work may connect.</p>
       </div>
       <div class="contact-actions">
         <a class="btn-hero" href="mailto:theunmuted@163.com?subject=Collaboration%20with%20The%20Unmuted" data-i18n="emailTeam">Email the team</a>
         <a class="btn-hero-outline" href="https://xhslink.cn/m/622X9FXTBAV" target="_blank" rel="noopener" data-i18n="visitRednote">Visit Rednote</a>
+        <a class="btn-hero-outline" href="https://mp.weixin.qq.com/s/s5J6gAPiqklgCOsie7Ewnw" target="_blank" rel="noopener" data-i18n="visitWechatArticle">Read WeChat article</a>
         <span class="contact-email">theunmuted@163.com</span>
       </div>
     </div>
@@ -909,7 +944,7 @@
     <div class="thanks-block">
       <div class="thanks-heading">
         <span class="section-tag" data-i18n="thanksTag">Special thanks</span>
-        <h3 data-i18n="thanksTitle">The first version was shaped by many generous hands.</h3>
+        <h3 data-i18n-html="thanksTitle">The first version was shaped by many generous hands.</h3>
         <p data-i18n="thanksLead">We are grateful to the people who challenged our thinking, opened doors, and helped the project take form.</p>
       </div>
       <div class="thanks-grid">
@@ -929,7 +964,7 @@
     <div class="section-header">
       <span class="section-tag" data-i18n="resourcesTag">Support resources</span>
       <h2 class="section-h2" data-i18n="resourcesTitle">From practice to real-world support.</h2>
-      <p class="section-lead" data-i18n="resourcesLead">Learning helps you prepare. If you or someone you know needs support now, these mainland China resources offer a practical next step.</p>
+      <p class="section-lead" data-i18n-html="resourcesLead">Learning helps you prepare. If you or someone you know needs support now, these mainland China resources offer a practical next step.</p>
     </div>
     <div class="res-tabs">
       <div class="res-tab active" data-i18n="resourcesRegion">🇨🇳 Mainland China resources</div>
@@ -985,6 +1020,11 @@
   </div>
   <p class="share-status" id="share-status" role="status" aria-live="polite"></p>
 </div>
+
+<!-- BRAND STRIP -->
+<section class="brand-strip" aria-label="The Unmuted brand">
+  <img src="assets/brand-banner.png" alt="The Unmuted. Safety. Practice. Record. Support." loading="lazy" decoding="async" />
+</section>
 
 <!-- FOOTER -->
 <footer>
