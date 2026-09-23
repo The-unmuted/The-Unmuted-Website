@@ -15,6 +15,7 @@
       heroIntro: "<strong>The Unmuted</strong> is a bilingual safety and rights literacy platform for women. Through Safety, Practice, Record, and Support, we turn legal knowledge and safety resources into practical action before, during, and after harm.",
       heroPrimary: "Start practicing",
       heroSecondary: "Explore the platform",
+      heroManifesto: "Make the truth harder to erase, and asking for help easier to begin.",
       themeSongLabel: "Theme Song",
       themeSongTitle: "非默The Unmuted · 顾柿不柿",
       themeSongOpen: "Open NetEase",
@@ -86,14 +87,17 @@
       dev3Date: "May 2026",
       dev3Body: "Built the first working version in 24 hours and placed first in the China region.",
       tencentStatus: "Selected",
-      tencentDate: "June 2026",
+      tencentDate: "July 2026",
       tencentBody: "Selected as one of 40 projects in the action cohort exploring how AI can serve public value.",
       colosseumStatus: "Participated",
-      colosseumBody: "Presented the project and the team through a public competition submission.",
+      colosseumDate: "May 2026",
+      colosseumBody: "Iterated to version 1.5 and explored the possibility of blockchain-based record verification.",
       unescoStatus: "Pitched",
-      unescoBody: "Developed and presented an English-language pitch for The Unmuted.",
+      unescoDate: "August 2026",
+      unescoBody: "Repositioned The Unmuted's core framework from an \"evidence-collection tool\" to \"evidence literacy\" — helping women understand what counts as valid evidence, how to preserve it, and how to use it through legal channels.",
       socialShiftersStatus: "Challenge",
-      socialShiftersBody: "Participated with a dedicated project pitch and competition deck.",
+      socialShiftersDate: "September 2026",
+      socialShiftersBody: "Defined The Unmuted's positioning as a women's safety and rights literacy platform — expanding the entry point from crisis response to proactive rights education, and the audience to all women.",
       watchPitch: "Watch the pitch ↗",
       tencentPitch: "Watch the pitch (6:55:10) ↗",
       projectPitch: "Project pitch ↗",
@@ -102,7 +106,6 @@
       mediaTitle: "The conversations helping the work travel.",
       tencentMediaSource: "Tencent Research Institute · Feature",
       tencentMediaTitle: "“40 inspirations for using AI to do something good”",
-      tencentMediaDate: "02 July 2026",
       readFeature: "Read the feature ↗",
       bottleDreamSource: "BottleDream · Recorded conversation",
       bottleDreamTitle: "A conversation about The Unmuted’s origin and development",
@@ -164,6 +167,7 @@
       thanksTag: "Special thanks",
       thanksTitle: "The first version was shaped by many generous hands.",
       thanksLead: "We are grateful to the people who challenged our thinking, opened doors, and helped the project take form.",
+      thanksBalaHerstoryBody: "Bala offered many constructive suggestions for The Unmuted's early concept, and the Herstory community gave The Unmuted room to grow.",
       thanksYusuBody: "Contributed the post-incident recording idea and raised identity-misuse risks.",
       thanksCaiDuanBody: "Connected us with BottleDream, supported the search for engineering help, and helped with the recorded conversation.",
       thanksHaroldBody: "Helped clarify the logic and framework of the earliest version.",
@@ -205,7 +209,11 @@
       emailAria: "Email The Unmuted",
       shareText: "Learn your rights and practice difficult situations before you need to act.",
       shareCopied: "Website link copied.",
-      shareFailed: "The link could not be copied. Please copy it from the address bar."
+      shareFailed: "The link could not be copied. Please copy it from the address bar.",
+      shareModalTitle: "Share The Unmuted",
+      shareModalBody: "Scan the QR code to open The Unmuted beta on your phone.",
+      shareCopyLink: "Copy link",
+      shareModalCloseAria: "Close"
     },
     zh: {
       pageTitle: "非默｜面向女性的安全与权利素养平台",
@@ -222,6 +230,7 @@
       heroIntro: "<strong>非默</strong>是一个面向女性的双语安全与权利素养平台。我们致力于通过<span class=\"nb\">“安全、实践、记录、支持”</span>四个阶段，让法律知识和安全资源转化为危机前、中、后的<span class=\"nb\">实际行动</span>。",
       heroPrimary: "开始练习",
       heroSecondary: "了解平台",
+      heroManifesto: "让真相更难抹去，让求助更容易开始。",
       themeSongLabel: "主题曲",
       themeSongTitle: "非默The Unmuted · 顾柿不柿",
       themeSongOpen: "网易云打开",
@@ -293,14 +302,17 @@
       dev3Date: "2026 年 5 月",
       dev3Body: "在 24 小时内完成首个可用版本，并获得中国赛区第一名。",
       tencentStatus: "入选",
-      tencentDate: "2026 年 6 月",
+      tencentDate: "2026 年 7 月",
       tencentBody: "作为 40 个项目之一入选行动组，共同探索如何让 AI 服务公共价值。",
       colosseumStatus: "参赛",
-      colosseumBody: "通过公开参赛材料介绍非默项目与团队。",
+      colosseumDate: "2026 年 5 月",
+      colosseumBody: "迭代至 1.5 版本，探索区块链存证的可能性。",
       unescoStatus: "路演",
-      unescoBody: "为非默制作并展示英文项目路演。",
+      unescoDate: "2026 年 8 月",
+      unescoBody: "把核心框架从「证据收集工具」重新定位为「证据素养」，帮助女性理解什么是有价值的证据、如何保存、以及如何用于法律途径。",
       socialShiftersStatus: "挑战赛",
-      socialShiftersBody: "以专属项目路演与参赛材料参与全球创新挑战赛。",
+      socialShiftersDate: "2026 年 9 月",
+      socialShiftersBody: "将非默的定位确定为女性安全与权利素养平台，把入口从危机响应扩展到主动式权利教育，覆盖人群扩展到所有女性。",
       watchPitch: "观看路演 ↗",
       tencentPitch: "观看路演（指路进度条 6:55:10）↗",
       projectPitch: "项目介绍 ↗",
@@ -309,7 +321,6 @@
       mediaTitle: "让这项工作被更多人听见。",
       tencentMediaSource: "腾讯研究院 · 专题报道",
       tencentMediaTitle: "《如果妳也想用 AI 做一件好事，这里有 40 个灵感支持妳开始》",
-      tencentMediaDate: "2026 年 7 月 2 日",
       readFeature: "阅读报道 ↗",
       bottleDreamSource: "BottleDream · 录制对谈",
       bottleDreamTitle: "围绕非默的起点与发展展开对谈",
@@ -348,7 +359,7 @@
       lizRole: "品牌宣传与开发测试",
       lizResponsibility1: "代表团队参与线下路演展示、对外表达与合作资源对接。",
       lizResponsibility2: "协助社媒回复与用户沟通，收集用户反馈并同步。",
-      lizResponsibility3: "主导产品测试与协作开发流程范式的优化，包括接力开发流程、Bug 记录与修复等。",
+      lizResponsibility3: "主导产品测试与协作开发流程范式的优化，包括接力开发流程、Bug 记录与修复等。",
       xiangcaiRole: "社群运营与私域内容协助",
       xiangcaiResponsibility1: "主导微信社群的日常运营与用户维护，包括社群互动和用户反馈收集。",
       xiangcaiResponsibility2: "结合真实经验视角，协助团队理解用户处境与使用需求，为产品迭代和内容表达提供参考。",
@@ -369,8 +380,9 @@
       visitRednote: "访问小红书",
       visitWechatArticle: "查看公众号文章",
       thanksTag: "特别感谢",
-      thanksTitle: "许多真诚的帮助，<span class=\"nb\">共同塑造了</span>非默的<span class=\"nb\">第一个版本</span>。",
+      thanksTitle: "许多真诚的帮助，<br /><span class=\"nb\">共同塑造了</span>非默的<span class=\"nb\">第一个版本</span>。",
       thanksLead: "感谢所有挑战我们思考、打开连接并帮助项目逐步成形的人。",
+      thanksBalaHerstoryBody: "Bala 为非默初期的构想提出了许多建设性意见，Herstory 社区为非默提供了生长的土壤。",
       thanksYusuBody: "提出事后记录的产品想法，并提醒我们关注身份冒用风险。",
       thanksCaiDuanBody: "帮助连接 BottleDream、寻找工程支持，并协助完成录制对谈。",
       thanksHaroldBody: "帮助梳理非默初版的产品逻辑与整体框架。",
@@ -412,7 +424,11 @@
       emailAria: "给非默发送邮件",
       shareText: "在需要采取行动之前，先了解自己的权利并预演艰难处境。",
       shareCopied: "网站链接已复制。",
-      shareFailed: "无法复制链接，请从浏览器地址栏手动复制。"
+      shareFailed: "无法复制链接，请从浏览器地址栏手动复制。",
+      shareModalTitle: "分享非默",
+      shareModalBody: "手机扫码，即可打开非默内测。",
+      shareCopyLink: "复制链接",
+      shareModalCloseAria: "关闭"
     }
   };
 
@@ -421,6 +437,8 @@
   const languageButtons = Array.from(document.querySelectorAll("[data-language-option]"));
   const shareButton = document.getElementById("share-site");
   const shareStatus = document.getElementById("share-status");
+  const shareModal = document.getElementById("share-modal");
+  const shareModalCopyButton = document.getElementById("share-modal-copy");
   const themeSongToggle = document.getElementById("theme-song-toggle");
   const themeSongPanel = document.getElementById("theme-song-panel");
   const siteData = window.UNMUTED_SITE_DATA || {};
@@ -517,38 +535,78 @@
     });
   }
 
-  if (shareButton && shareStatus) {
+  function copyToClipboard(text) {
+    if (navigator.clipboard?.writeText) return navigator.clipboard.writeText(text);
+
+    const temporaryInput = document.createElement("input");
+    temporaryInput.value = text;
+    temporaryInput.setAttribute("readonly", "");
+    temporaryInput.style.position = "fixed";
+    temporaryInput.style.opacity = "0";
+    document.body.appendChild(temporaryInput);
+    temporaryInput.select();
+    document.execCommand("copy");
+    temporaryInput.remove();
+    return Promise.resolve();
+  }
+
+  function openShareModal() {
+    if (!shareModal) return;
+    if (shareStatus) shareStatus.textContent = "";
+    shareModal.hidden = false;
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeShareModal() {
+    if (!shareModal) return;
+    shareModal.hidden = true;
+    document.body.style.overflow = "";
+    if (shareStatus) shareStatus.textContent = "";
+  }
+
+  if (shareModal) {
+    shareModal.querySelectorAll("[data-share-close]").forEach((element) => {
+      element.addEventListener("click", closeShareModal);
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !shareModal.hidden) closeShareModal();
+    });
+  }
+
+  // On mobile, the native share sheet already gives people a clear, familiar
+  // way to send the link. On desktop, where that sheet rarely exists, we show
+  // a QR code instead of silently copying the link to the clipboard.
+  if (shareButton) {
     shareButton.addEventListener("click", async () => {
       const language = root.dataset.language === "zh" ? "zh" : "en";
       const strings = copy[language];
-      const shareData = {
-        title: strings.pageTitle,
-        text: strings.shareText,
-        url: window.location.href
-      };
 
+      if (navigator.share) {
+        try {
+          await navigator.share({
+            title: strings.pageTitle,
+            text: strings.shareText,
+            url: window.location.href
+          });
+        } catch (_) {
+          // The share sheet already communicates cancellation; no fallback needed.
+        }
+        return;
+      }
+
+      openShareModal();
+    });
+  }
+
+  if (shareModalCopyButton && shareStatus) {
+    shareModalCopyButton.addEventListener("click", async () => {
+      const language = root.dataset.language === "zh" ? "zh" : "en";
+      const strings = copy[language];
       try {
-        if (navigator.share) {
-          await navigator.share(shareData);
-          return;
-        }
-
-        if (navigator.clipboard?.writeText) {
-          await navigator.clipboard.writeText(shareData.url);
-        } else {
-          const temporaryInput = document.createElement("input");
-          temporaryInput.value = shareData.url;
-          temporaryInput.setAttribute("readonly", "");
-          temporaryInput.style.position = "fixed";
-          temporaryInput.style.opacity = "0";
-          document.body.appendChild(temporaryInput);
-          temporaryInput.select();
-          document.execCommand("copy");
-          temporaryInput.remove();
-        }
+        await copyToClipboard(window.location.href);
         shareStatus.textContent = strings.shareCopied;
-      } catch (error) {
-        if (error?.name !== "AbortError") shareStatus.textContent = strings.shareFailed;
+      } catch (_) {
+        shareStatus.textContent = strings.shareFailed;
       }
     });
   }
