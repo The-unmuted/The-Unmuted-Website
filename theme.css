@@ -278,11 +278,13 @@ nav {
 
 .hero-sub-row .hero-sub {
   flex: 1 1 360px;
+  min-width: 0;
 }
 
 .hero-sub-row .music-float {
   margin-top: 0;
   flex: 0 1 320px;
+  min-width: 0;
 }
 
 .hero-cta-group {
@@ -290,6 +292,7 @@ nav {
   flex-direction: column;
   gap: 0.9rem;
   flex: 0 1 280px;
+  min-width: 0;
 }
 
 .hero-buttons {
