@@ -470,6 +470,26 @@
 </head>
 <body id="top">
 
+<!-- TEMP DEBUG BANNER: remove after diagnosing mobile layout issue -->
+<div id="debug-viewport" style="position:fixed;top:0;left:0;right:0;z-index:99999;background:#ffee00;color:#000;font-size:12px;line-height:1.4;padding:6px 8px;text-align:center;font-family:monospace;"></div>
+<script>
+  (function () {
+    var el = document.getElementById("debug-viewport");
+    function report() {
+      el.textContent =
+        "innerWidth=" + window.innerWidth +
+        " outerWidth=" + window.outerWidth +
+        " screenWidth=" + window.screen.width +
+        " dpr=" + window.devicePixelRatio +
+        " mq900=" + window.matchMedia("(max-width: 900px)").matches +
+        " mq700=" + window.matchMedia("(max-width: 700px)").matches +
+        " ua=" + navigator.userAgent.slice(0, 40);
+    }
+    report();
+    window.addEventListener("resize", report);
+  })();
+</script>
+
 <!-- NAV -->
 <nav>
   <div class="nav-inner">
