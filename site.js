@@ -207,7 +207,6 @@
       githubAria: "The Unmuted official website on GitHub",
       rednoteAria: "The Unmuted on Rednote",
       emailAria: "Email The Unmuted",
-      shareText: "Learn your rights and practice difficult situations before you need to act.",
       shareCopied: "Website link copied.",
       shareFailed: "The link could not be copied. Please copy it from the address bar.",
       shareModalTitle: "Share The Unmuted",
@@ -422,7 +421,6 @@
       githubAria: "非默官方网站的 GitHub 仓库",
       rednoteAria: "非默的小红书主页",
       emailAria: "给非默发送邮件",
-      shareText: "在需要采取行动之前，先了解自己的权利并预演艰难处境。",
       shareCopied: "网站链接已复制。",
       shareFailed: "无法复制链接，请从浏览器地址栏手动复制。",
       shareModalTitle: "分享非默",
@@ -573,27 +571,12 @@
     });
   }
 
-  // On mobile, the native share sheet already gives people a clear, familiar
-  // way to send the link. On desktop, where that sheet rarely exists, we show
-  // a QR code instead of silently copying the link to the clipboard.
+  // Always show our own QR code modal rather than the OS share sheet: native
+  // share handoffs to apps like WeChat have proven unreliable (tapping
+  // "Send to Chat" silently does nothing), while scanning a QR code or
+  // copying the link works the same everywhere.
   if (shareButton) {
-    shareButton.addEventListener("click", async () => {
-      const language = root.dataset.language === "zh" ? "zh" : "en";
-      const strings = copy[language];
-
-      if (navigator.share) {
-        try {
-          await navigator.share({
-            title: strings.pageTitle,
-            text: strings.shareText,
-            url: window.location.href
-          });
-        } catch (_) {
-          // The share sheet already communicates cancellation; no fallback needed.
-        }
-        return;
-      }
-
+    shareButton.addEventListener("click", () => {
       openShareModal();
     });
   }
