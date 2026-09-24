@@ -501,7 +501,7 @@ nav {
   min-height: 58px;
   padding: 0.45rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0.2rem;
   border-top: 1px solid var(--border-soft);
   background: rgba(26, 24, 53, 0.94);
@@ -530,6 +530,7 @@ nav {
 }
 
 .stats-inner {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0;
 }
 
@@ -621,6 +622,11 @@ section {
 .team-grid,
 .res-grid {
   gap: 1rem;
+}
+
+.problem-grid,
+.res-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .problem-card,
@@ -764,6 +770,7 @@ section {
 }
 
 .how-steps {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
 }
 
