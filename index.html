@@ -500,7 +500,7 @@
         " subRowWrap=" + (subRow ? getComputedStyle(subRow).flexWrap : "n/a") +
         " subRowDisplay=" + (subRow ? getComputedStyle(subRow).display : "n/a");
     }
-    report();
+    window.addEventListener("load", report);
     window.addEventListener("resize", report);
   })();
 </script>
