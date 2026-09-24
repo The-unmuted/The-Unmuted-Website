@@ -475,15 +475,30 @@
 <script>
   (function () {
     var el = document.getElementById("debug-viewport");
+    function ruleCount(href) {
+      for (var i = 0; i < document.styleSheets.length; i++) {
+        var sheet = document.styleSheets[i];
+        try {
+          if (sheet.href && sheet.href.indexOf(href) !== -1) {
+            return sheet.cssRules ? sheet.cssRules.length : "blocked";
+          }
+        } catch (e) {
+          return "cors-blocked";
+        }
+      }
+      return "not-found";
+    }
     function report() {
+      var phone = document.querySelector(".hero-phone");
+      var inner = document.querySelector(".hero-inner");
+      var subRow = document.querySelector(".hero-sub-row");
       el.textContent =
-        "innerWidth=" + window.innerWidth +
-        " outerWidth=" + window.outerWidth +
-        " screenWidth=" + window.screen.width +
-        " dpr=" + window.devicePixelRatio +
-        " mq900=" + window.matchMedia("(max-width: 900px)").matches +
-        " mq700=" + window.matchMedia("(max-width: 700px)").matches +
-        " ua=" + navigator.userAgent.slice(0, 40);
+        "w=" + window.innerWidth +
+        " themeCssRules=" + ruleCount("theme.css") +
+        " heroPhoneDisplay=" + (phone ? getComputedStyle(phone).display : "n/a") +
+        " heroInnerCols=" + (inner ? getComputedStyle(inner).gridTemplateColumns : "n/a") +
+        " subRowWrap=" + (subRow ? getComputedStyle(subRow).flexWrap : "n/a") +
+        " subRowDisplay=" + (subRow ? getComputedStyle(subRow).display : "n/a");
     }
     report();
     window.addEventListener("resize", report);
