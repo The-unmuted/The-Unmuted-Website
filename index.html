@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=1440" />
   <meta name="theme-color" content="#0E0E25" />
-  <meta name="description" content="The Unmuted is a bilingual safety and rights literacy platform for women, turning legal knowledge and safety resources into practical action." />
+  <meta name="description" content="The Unmuted is a trilingual safety and rights literacy platform for women, turning legal knowledge and safety resources into practical action." />
   <title>The Unmuted | Safety and rights literacy for women</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -486,6 +486,7 @@
       <div class="language-switcher" role="group" aria-label="Choose website language" data-i18n-aria="languageLabel">
         <button class="language-option" type="button" data-language-option="en" aria-pressed="true">EN</button>
         <button class="language-option" type="button" data-language-option="zh" aria-pressed="false">中文</button>
+        <button class="language-option" type="button" data-language-option="de" aria-pressed="false">DE</button>
       </div>
       <a class="btn-primary nav-cta" href="https://the-unmuted-beta.pages.dev/" target="_blank" rel="noopener" data-i18n="navCta">Start practicing →</a>
     </div>
@@ -502,7 +503,7 @@
       </div>
       <h1 data-i18n-html="heroTitle">Know your rights<br><em>before</em> you need them.</h1>
       <div class="hero-sub-row">
-        <p class="hero-sub" data-i18n-html="heroIntro"><strong>The Unmuted</strong> is a bilingual safety and rights literacy platform for women. Through Safety, Practice, Record, and Support, we turn legal knowledge and safety resources into practical action before, during, and after harm.</p>
+        <p class="hero-sub" data-i18n-html="heroIntro"><strong>The Unmuted</strong> is a trilingual safety and rights literacy platform for women. Through Safety, Practice, Record, and Support, we turn legal knowledge and safety resources into practical action before, during, and after harm.</p>
         <div class="music-float" id="theme-song-widget">
           <div class="music-panel" id="theme-song-panel">
             <div class="music-panel-head">
@@ -773,14 +774,6 @@
           <strong data-i18n="offlinePitchTitle">The Unmuted offline pitch recording</strong>
           <span class="media-action" data-i18n="watchPitchLink">Watch the pitch ↗</span>
         </a>
-        <div class="media-card media-card--wechat-mp">
-          <div class="media-card-copy">
-            <span class="media-source" data-i18n="wechatMpSource">Official WeChat account</span>
-            <strong data-i18n="wechatMpTitle">Follow The Unmuted on WeChat</strong>
-            <span class="media-action" data-i18n="wechatMpAction">Scan to follow →</span>
-          </div>
-          <img class="media-card-qr" src="wechat-mp-qr.jpg" alt="The Unmuted WeChat official account QR code" width="120" height="120" loading="lazy" />
-        </div>
       </aside>
     </div>
   </div>
@@ -932,7 +925,7 @@
       </article>
     </div>
 
-    <div class="contact-panel">
+    <div class="contact-panel" id="contact">
       <div>
         <span class="contact-kicker" data-i18n="contactTag">Get in touch</span>
         <h3 data-i18n="contactTitle">Start a conversation with the team.</h3>
@@ -942,7 +935,14 @@
         <a class="btn-hero" href="mailto:theunmuted@163.com?subject=Collaboration%20with%20The%20Unmuted" data-i18n="emailTeam">Email the team</a>
         <a class="btn-hero-outline" href="https://xhslink.cn/m/622X9FXTBAV" target="_blank" rel="noopener" data-i18n="visitRednote">Visit Rednote</a>
         <a class="btn-hero-outline" href="https://mp.weixin.qq.com/s/s5J6gAPiqklgCOsie7Ewnw" target="_blank" rel="noopener" data-i18n="visitWechatArticle">Read WeChat article</a>
-        <span class="contact-email">theunmuted@163.com</span>
+      </div>
+      <div class="contact-wechat-card">
+        <div class="contact-wechat-copy">
+          <span class="media-source" data-i18n="wechatMpSource">Official WeChat account</span>
+          <strong data-i18n="wechatMpTitle">Follow The Unmuted on WeChat</strong>
+          <span class="media-action" data-i18n="wechatMpAction">Scan to follow →</span>
+        </div>
+        <img class="contact-wechat-qr" src="wechat-mp-qr.jpg" alt="The Unmuted WeChat official account QR code" width="120" height="120" loading="lazy" />
       </div>
     </div>
   </div>
@@ -1055,18 +1055,21 @@
         <div class="footer-mark"><img src="mark.png" alt="The Unmuted" /></div>
         <div class="footer-name" data-i18n="brandName">The Unmuted</div>
       </div>
-      <div class="footer-tagline" data-i18n="footerTagline">A bilingual safety and rights literacy platform for women, primarily serving mainland China.</div>
+      <div class="footer-tagline" data-i18n="footerTagline">A trilingual safety and rights literacy platform for women, primarily serving mainland China.</div>
     </div>
     <div class="footer-social">
-      <a class="social-link" href="https://github.com/The-unmuted/The-Unmuted-Website" target="_blank" rel="noopener" title="GitHub" aria-label="The Unmuted official website on GitHub" data-i18n-aria="githubAria">GH</a>
-      <a class="social-link" href="https://xhslink.cn/m/622X9FXTBAV" target="_blank" rel="noopener" title="Rednote" aria-label="The Unmuted on Rednote" data-i18n-aria="rednoteAria">R</a>
-      <a class="social-link" href="mailto:theunmuted@163.com" title="Email" aria-label="Email The Unmuted" data-i18n-aria="emailAria">@</a>
+      <a class="social-link social-link--github" href="https://github.com/The-unmuted/The-Unmuted-Website" target="_blank" rel="noopener" title="GitHub" aria-label="The Unmuted official website on GitHub" data-i18n-aria="githubAria">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M12 .7a11.3 11.3 0 0 0-3.57 22c.57.1.77-.25.77-.55v-2.18c-3.16.69-3.82-1.34-3.82-1.34-.52-1.31-1.26-1.66-1.26-1.66-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.73 2.65 1.23 3.3.94.1-.73.4-1.23.72-1.51-2.52-.29-5.17-1.26-5.17-5.59 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.44.11-3 0 0 .95-.31 3.11 1.16A10.8 10.8 0 0 1 12 6.09c.96 0 1.93.13 2.83.38 2.16-1.47 3.11-1.16 3.11-1.16.62 1.56.23 2.71.11 3 .73.79 1.17 1.8 1.17 3.04 0 4.34-2.65 5.3-5.18 5.58.41.35.77 1.05.77 2.12v3.1c0 .3.2.66.78.55A11.3 11.3 0 0 0 12 .7Z" />
+        </svg>
+        <span>GitHub</span>
+      </a>
     </div>
   </div>
   <div class="footer-inner footer-copy">
     <span data-i18n="footerCopyright">© 2026 The Unmuted. All rights reserved.</span>
     <div class="footer-links">
-      <a href="#collaborate" data-i18n="footerContact">Contact us</a>
+      <a href="#contact" data-i18n="footerContact">Contact us</a>
       <a href="case-archive/" data-i18n="footerArchive">Case archive</a>
       <a href="https://the-unmuted-beta.pages.dev/" target="_blank" rel="noopener" data-i18n="footerBeta">Open the beta</a>
     </div>

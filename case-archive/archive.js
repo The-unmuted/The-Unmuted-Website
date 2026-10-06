@@ -18,7 +18,7 @@
       languageLabel: "选择网站语言",
       quickExit: "Take a break",
       heroEyebrow: "独立案件档案 · 持续更新",
-      sourceCutoff: "公开资料核验截至 2026-10-05",
+      sourceCutoff: "公开资料核验截至 2026-10-07",
       heroTitle: "德国华人<br /><em>下药性侵<br />案件档案</em>",
       heroDeck: "追踪多个司法辖区内，与加密群组“德国老司机驾校”相关的公开庭审、判决、调查与报道。我们把已确认事实、未决法律程序和媒体评论分开呈现。",
       readCases: "查看案件进展",
@@ -121,7 +121,7 @@
       languageLabel: "Choose website language",
       quickExit: "Take a break",
       heroEyebrow: "INDEPENDENT CASE ARCHIVE · LIVING RECORD",
-      sourceCutoff: "Public sources reviewed through 5 Oct 2026",
+      sourceCutoff: "Public sources reviewed through 7 Oct 2026",
       heroTitle: "Germany-based<br /><em>drug-facilitated sexual violence cases</em>",
       heroDeck: "Tracking public trials, judgments, investigations, and reporting across jurisdictions connected to the encrypted group known in Chinese as “German Veteran Drivers’ School.” Confirmed facts, unresolved proceedings, and commentary are kept separate.",
       readCases: "Review case status",
@@ -224,7 +224,7 @@
       languageLabel: "Sprache der Website wählen",
       quickExit: "Take a break",
       heroEyebrow: "UNABHÄNGIGES FALLARCHIV · FORTLAUFENDE DOKUMENTATION",
-      sourceCutoff: "Öffentliche Quellen geprüft bis 5. Oktober 2026",
+      sourceCutoff: "Öffentliche Quellen geprüft bis 7. Oktober 2026",
       heroTitle: "Fälle sexualisierter Gewalt<br /><em>unter Betäubung<br />in Deutschland</em>",
       heroDeck: "Dokumentiert werden öffentliche Prozesse, Urteile, Ermittlungen und Berichte aus mehreren Zuständigkeitsbereichen, die mit der chinesischsprachigen verschlüsselten Gruppe „德国老司机驾校“ (wörtlich etwa „Deutsche Veteranenfahrschule“) in Verbindung stehen. Bestätigte Tatsachen, offene Verfahren und journalistische Einordnung werden getrennt dargestellt.",
       readCases: "Verfahrensstand ansehen",
@@ -472,6 +472,7 @@
       { date: "2026-08-31", title: "跨中德女性协作的调查脉络被完整记录", body: "《正面连接》梳理记者、律师、留学生、医疗工作者与旁听者如何推动案件进入更广泛的公共视野。", sourceId: "wx-network" },
       { date: "2026-07-21", title: "受害者讲述下药后的记忆空白与二次指责", body: "谷雨实验室刊发受害者一手讲述，记录她寻求帮助、参与司法程序以及面对网络指责的经历。", sourceId: "wx-survivor" },
       { date: "2026-07-08", title: "Zhiting S. 一审被判总计五年", body: "柏林第一地方法院判处总计五年监禁；法院新闻稿明确说明判决尚未生效，并公布案号 528 KLs 22/25。", sourceId: "berlin-court" },
+      { date: "2026-05-28", title: "播客从庭审现场延伸讨论群组机制、法律与报道伦理", body: "《不合时宜》以 5 月 20 日柏林庭审观察为起点，邀请记者孙谦与刑法学者陈碧讨论群组对犯罪的强化、不同法域的量刑逻辑、跨境追诉条件，以及保护受害者身份的报道责任。", sourceId: "podcast-buheshiyi" },
       { date: "2026-04-14", title: "Zhongyi J. 在慕尼黑被判十一年三个月", body: "法院认定两起谋杀未遂和六起特别严重强奸；德国之声 2026 年 6 月 16 日的后续报道确认判决已生效。", sourceId: "taz" },
       { date: "2026-03-19", title: "Zhiting S. 案在柏林开庭", body: "德国之声确认案件于 3 月 19 日开庭，并于 5 月报道庭审现场及后续排期。", sourceId: "dw-trial" },
       { date: "2026-02-06", title: "Dapeng Z. 在法兰克福被判十四年", body: "法院同时裁定刑满后预防性拘押；截至德国之声 2026 年 6 月 16 日报道，被告已向联邦最高法院提起上诉。", sourceId: "zeit-frankfurt" },
@@ -483,6 +484,7 @@
       { date: "31 AUG 2026", isoDate: "2026-08-31", title: "Cross-border collaboration by women is documented", body: "Positive Connection traced how journalists, lawyers, students, healthcare workers, and courtroom observers helped bring the cases into wider public view.", sourceId: "wx-network" },
       { date: "21 JUL 2026", isoDate: "2026-07-21", title: "A survivor describes memory loss and secondary blame", body: "Guyu Lab published a first-person account of seeking help, participating in legal proceedings, and facing online blame.", sourceId: "wx-survivor" },
       { date: "8 JUL 2026", isoDate: "2026-07-08", title: "Zhiting S. receives an aggregate five-year sentence at first instance", body: "Berlin Regional Court I imposed an aggregate five-year sentence. The court release states that the judgment was not final and gives docket 528 KLs 22/25.", sourceId: "berlin-court" },
+      { date: "28 MAY 2026", isoDate: "2026-05-28", title: "Podcast connects courtroom observation with legal and reporting questions", body: "Starting from observations at the 20 May Berlin hearing, Buheshiyi brought journalist Sun Qian and criminal-law scholar Chen Bi together to discuss group reinforcement, sentencing across legal systems, conditions for cross-border prosecution, and the duty to protect survivors in reporting.", sourceId: "podcast-buheshiyi" },
       { date: "14 APR 2026", isoDate: "2026-04-14", title: "Zhongyi J. sentenced to eleven years and three months in Munich", body: "The court found two attempted murders and six especially aggravated rapes. Deutsche Welle’s 16 June 2026 follow-up confirms that the judgment became final.", sourceId: "taz" },
       { date: "19 MAR 2026", isoDate: "2026-03-19", title: "Trial of Zhiting S. begins in Berlin", body: "Deutsche Welle confirms that the trial opened on 19 March and later reported from the courtroom and listed further hearing dates.", sourceId: "dw-trial" },
       { date: "6 FEB 2026", isoDate: "2026-02-06", title: "Dapeng Z. sentenced to fourteen years in Frankfurt", body: "The court also ordered preventive detention. As of Deutsche Welle’s 16 June 2026 report, he had appealed to the Federal Court of Justice.", sourceId: "zeit-frankfurt" },
@@ -494,6 +496,7 @@
       { date: "31. AUGUST 2026", isoDate: "2026-08-31", title: "Grenzüberschreitende Zusammenarbeit von Frauen wird dokumentiert", body: "Positive Connection zeichnete nach, wie Journalistinnen, Juristinnen, Studierende, Fachkräfte aus dem Gesundheitswesen und Prozessbeobachterinnen die Fälle öffentlich sichtbar machten.", sourceId: "wx-network" },
       { date: "21. JULI 2026", isoDate: "2026-07-21", title: "Eine Betroffene berichtet über Erinnerungslücken und sekundäre Schuldzuweisungen", body: "Guyu Lab veröffentlichte einen Bericht über Hilfesuche, Beteiligung am Strafverfahren und Schuldzuweisungen im Netz.", sourceId: "wx-survivor" },
       { date: "8. JULI 2026", isoDate: "2026-07-08", title: "Zhiting S. erhält in erster Instanz eine Gesamtfreiheitsstrafe von fünf Jahren", body: "Die Berliner Strafgerichte veröffentlichten die Feststellungen, den Hinweis auf die fehlende Rechtskraft und das Aktenzeichen 528 KLs 22/25.", sourceId: "berlin-court" },
+      { date: "28. MAI 2026", isoDate: "2026-05-28", title: "Podcast verbindet Prozessbeobachtung mit rechtlichen und medienethischen Fragen", body: "Ausgehend von Beobachtungen bei der Berliner Verhandlung am 20. Mai diskutierten die Journalistin Sun Qian und die Strafrechtswissenschaftlerin Chen Bi bei Buheshiyi über gruppendynamische Verstärkung, Strafzumessung in verschiedenen Rechtssystemen, Voraussetzungen grenzüberschreitender Strafverfolgung und den Schutz Betroffener in der Berichterstattung.", sourceId: "podcast-buheshiyi" },
       { date: "14. APRIL 2026", isoDate: "2026-04-14", title: "Zhongyi J. wird in München zu elf Jahren und drei Monaten verurteilt", body: "Das Gericht stellte zwei versuchte Morde und sechs besonders schwere Vergewaltigungen fest. Der DW-Folgebericht vom 16. Juni 2026 bestätigt die Rechtskraft.", sourceId: "taz" },
       { date: "19. MÄRZ 2026", isoDate: "2026-03-19", title: "Der Prozess gegen Zhiting S. beginnt in Berlin", body: "Deutsche Welle bestätigt den Prozessbeginn am 19. März und berichtete später aus dem Gerichtssaal sowie über weitere Verhandlungstermine.", sourceId: "dw-trial" },
       { date: "6. FEBRUAR 2026", isoDate: "2026-02-06", title: "Dapeng Z. wird in Frankfurt zu vierzehn Jahren verurteilt", body: "Das Gericht ordnete zudem die anschließende Sicherungsverwahrung an. Laut DW-Bericht vom 16. Juni 2026 legte der Angeklagte Revision zum Bundesgerichtshof ein.", sourceId: "zeit-frankfurt" },
@@ -630,6 +633,26 @@
         note: "《正面连接》公众号 · 2026-06-05 · 微信原文",
         url: "https://mp.weixin.qq.com/s/rW2elCN8SuvTk5dcj22DmA",
         wechatOnly: true
+      },
+      {
+        id: "podcast-buheshiyi",
+        type: "commentary",
+        typeLabel: "播客 / 法律讨论",
+        date: "2026-05-28",
+        publisher: "不合时宜 · 若含、王磬；嘉宾：孙谦、陈碧",
+        title: "在德国法庭见证华人迷奸案的审判，我感到一种集体的愤怒",
+        summary: "以 5 月 20 日柏林庭审的现场观察为起点，讨论群组如何强化犯罪、不同法域的量刑理念、跨境追诉的现实条件，以及媒体保护受害者的责任。",
+        note: "中文播客 · 1:18:29 · Apple Podcasts 原始节目",
+        highlightsLabel: "节目内容要点（按实际音频整理）",
+        highlights: [
+          { time: "03:57–07:10", text: "孙谦与王磬回顾 5 月 20 日柏林庭审：约三十个旁听席很快坐满，不少华人女性到场；德语使用者自发翻译，并通过 Telegram 共享庭审记录。节目把这种到场描述为集体见证，也让彼此知道自己并不孤立。" },
+          { time: "10:03–15:50", text: "陈碧与孙谦分析，群内的经验交换、暗语和认可可能降低实施与传播犯罪的心理门槛，并促成手法复制。这是嘉宾对群体机制的分析，不是法院认定。" },
+          { time: "17:57–33:20", text: "陈碧区分“解释犯罪”与“为犯罪开脱”，并讨论德国刑罚与预防性拘押的不同功能；节目提醒，不能脱离制度背景直接比较德国、中国和美国的刑期数字。" },
+          { time: "39:21–48:30", text: "对谈讨论被指发生在北京的行为能否在中国受到追诉，指出这取决于立案、证据、管辖、人员是否回国及跨境取证等条件，并不意味着追诉已经启动或必然发生。" },
+          { time: "49:04–55:16", text: "节目把录制和传播行为理解为群体内部的炫耀、关注与地位奖励，并讨论这种回报为何可能压过对暴露的恐惧；这是分析而非确定的心理诊断。" },
+          { time: "01:13:37–01:17:41", text: "节目主张让羞耻由受害者转向施害者，同时强调公开讲述不应成为衡量受害者勇气的标准。报道应减少不必要的作案细节，避免让熟人据此识别受害者。" }
+        ],
+        url: "https://podcasts.apple.com/it/podcast/%E5%9C%A8%E5%BE%B7%E5%9B%BD%E6%B3%95%E5%BA%AD%E8%A7%81%E8%AF%81%E5%8D%8E%E4%BA%BA%E8%BF%B7%E5%A5%B8%E6%A1%88%E7%9A%84%E5%AE%A1%E5%88%A4-%E6%88%91%E6%84%9F%E5%88%B0%E4%B8%80%E7%A7%8D%E9%9B%86%E4%BD%93%E7%9A%84%E6%84%A4%E6%80%92/id1487143507?i=1000769957347"
       },
       {
         id: "wx-zhiting",
@@ -818,6 +841,27 @@
         wechatOnly: true
       },
       {
+        id: "podcast-buheshiyi",
+        type: "commentary",
+        typeLabel: "Podcast / legal discussion",
+        date: "28 MAY 2026",
+        publisher: "Buheshiyi · Ruohan and Wang Qing; guests: Sun Qian and Chen Bi",
+        title: "在德国法庭见证华人迷奸案的审判，我感到一种集体的愤怒",
+        displayTitle: "Witnessing the trial of a Germany-based Chinese drug-facilitated sexual violence case, I felt a collective anger",
+        summary: "Starting with observations from the 20 May Berlin hearing, the episode examines group reinforcement of offending, sentencing across legal systems, practical limits on cross-border prosecution, and the media’s duty to protect survivors.",
+        note: "Chinese-language podcast · 1:18:29 · original episode on Apple Podcasts",
+        highlightsLabel: "What the episode discusses (from the audio)",
+        highlights: [
+          { time: "03:57–07:10", text: "Sun Qian and Wang Qing describe the 20 May Berlin hearing: roughly thirty public seats filled quickly, many Chinese women attended, German speakers translated voluntarily, and observers shared hearing notes through Telegram. They frame attendance as collective witnessing and a way to counter isolation." },
+          { time: "10:03–15:50", text: "Chen Bi and Sun Qian analyse how advice, coded language, and peer approval inside groups may lower psychological barriers and encourage replication. The episode presents this as the guests’ analysis, not a judicial finding." },
+          { time: "17:57–33:20", text: "Chen Bi separates explaining offending from excusing it, then discusses the distinct roles of finite punishment and preventive detention in Germany. The episode cautions against comparing German, Chinese, and US sentence lengths without their legal context." },
+          { time: "39:21–48:30", text: "The speakers consider whether conduct alleged to have occurred in Beijing could be prosecuted in China. They identify case opening, evidence, jurisdiction, a person’s return, and cross-border evidence gathering as practical conditions—not proof that prosecution has begun or will occur." },
+          { time: "49:04–55:16", text: "The conversation treats recording and circulation as possible sources of attention, status, and validation within the group, asking why those rewards might outweigh fear of detection. This is analysis rather than a definitive psychological diagnosis." },
+          { time: "01:13:37–01:17:41", text: "The speakers call for shame to shift from survivors to perpetrators while stressing that public disclosure must never become a test of a survivor’s courage. Reporting should omit unnecessary operational detail and prevent acquaintances from identifying survivors." }
+        ],
+        url: "https://podcasts.apple.com/it/podcast/%E5%9C%A8%E5%BE%B7%E5%9B%BD%E6%B3%95%E5%BA%AD%E8%A7%81%E8%AF%81%E5%8D%8E%E4%BA%BA%E8%BF%B7%E5%A5%B8%E6%A1%88%E7%9A%84%E5%AE%A1%E5%88%A4-%E6%88%91%E6%84%9F%E5%88%B0%E4%B8%80%E7%A7%8D%E9%9B%86%E4%BD%93%E7%9A%84%E6%84%A4%E6%80%92/id1487143507?i=1000769957347"
+      },
+      {
         id: "wx-zhiting",
         type: "wechat",
         typeLabel: "WeChat reporting",
@@ -956,6 +1000,27 @@
         wechatOnly: true
       },
       {
+        id: "podcast-buheshiyi",
+        type: "commentary",
+        typeLabel: "Podcast / Rechtsgespräch",
+        date: "28.05.2026",
+        publisher: "Buheshiyi · Ruohan und Wang Qing; Gäste: Sun Qian und Chen Bi",
+        title: "在德国法庭见证华人迷奸案的审判，我感到一种集体的愤怒",
+        displayTitle: "Als ich in Deutschland den Prozess zu einem Fall sexualisierter Gewalt unter Betäubung im chinesischen Umfeld miterlebte, empfand ich eine kollektive Wut",
+        summary: "Ausgehend von Beobachtungen bei der Berliner Verhandlung am 20. Mai behandelt die Folge gruppendynamische Verstärkung von Taten, Strafzumessung in verschiedenen Rechtssystemen, praktische Grenzen grenzüberschreitender Strafverfolgung und die Verantwortung der Medien gegenüber Betroffenen.",
+        note: "Chinesischsprachiger Podcast · 1:18:29 · Originalfolge bei Apple Podcasts",
+        highlightsLabel: "Themen der Folge (aus dem Audio)",
+        highlights: [
+          { time: "03:57–07:10", text: "Sun Qian und Wang Qing schildern die Berliner Verhandlung vom 20. Mai: Die rund dreißig Publikumsplätze waren rasch belegt, viele chinesische Frauen kamen, Deutschsprachige übersetzten freiwillig und Prozessnotizen wurden über Telegram geteilt. Die Anwesenheit wird als gemeinsames Zeugnis gegen Isolation beschrieben." },
+          { time: "10:03–15:50", text: "Chen Bi und Sun Qian analysieren, wie Ratschläge, Codesprache und Anerkennung in Gruppen psychologische Hemmschwellen senken und Nachahmung fördern können. Dies ist eine Analyse der Gäste, keine gerichtliche Feststellung." },
+          { time: "17:57–33:20", text: "Chen Bi trennt die Erklärung von Taten von ihrer Entschuldigung und erläutert die unterschiedlichen Funktionen zeitiger Freiheitsstrafe und Sicherungsverwahrung in Deutschland. Die Folge warnt davor, Strafhöhen in Deutschland, China und den USA ohne Systemkontext direkt zu vergleichen." },
+          { time: "39:21–48:30", text: "Das Gespräch erörtert, ob mutmaßlich in Peking begangene Taten in China strafrechtlich verfolgt werden könnten. Genannt werden die Einleitung eines Ermittlungsverfahrens, Beweislage, Zuständigkeit, Rückkehr der beschuldigten Person und grenzüberschreitende Beweiserhebung – nicht, dass eine Verfolgung bereits begonnen hat oder sicher erfolgen wird." },
+          { time: "49:04–55:16", text: "Aufnahmen und ihre Verbreitung werden als mögliche Quelle von Aufmerksamkeit, Status und Bestätigung innerhalb der Gruppe analysiert; diskutiert wird, warum diese Belohnung die Angst vor Entdeckung überwiegen könnte. Es handelt sich nicht um eine abschließende psychologische Diagnose." },
+          { time: "01:13:37–01:17:41", text: "Die Gesprächsrunde fordert, Scham von den Betroffenen auf die Täter zu verlagern, betont aber zugleich: Öffentliches Sprechen darf nie zum Maßstab für den Mut einer betroffenen Person werden. Berichte sollen unnötige Tatdetails vermeiden und eine Identifizierung durch Bekannte verhindern." }
+        ],
+        url: "https://podcasts.apple.com/it/podcast/%E5%9C%A8%E5%BE%B7%E5%9B%BD%E6%B3%95%E5%BA%AD%E8%A7%81%E8%AF%81%E5%8D%8E%E4%BA%BA%E8%BF%B7%E5%A5%B8%E6%A1%88%E7%9A%84%E5%AE%A1%E5%88%A4-%E6%88%91%E6%84%9F%E5%88%B0%E4%B8%80%E7%A7%8D%E9%9B%86%E4%BD%93%E7%9A%84%E6%84%A4%E6%80%92/id1487143507?i=1000769957347"
+      },
+      {
         id: "dw",
         type: "media",
         typeLabel: "Chinesischer Bericht",
@@ -1070,6 +1135,7 @@
     "berlin-court",
     "dw",
     "wx-first-voice",
+    "podcast-buheshiyi",
     "dw-trial",
     "cdt",
     "taz",
@@ -1089,6 +1155,7 @@
     ["berlin-court", "2026-07-08"],
     ["dw", "2026-06-16"],
     ["wx-first-voice", "2026-06-05"],
+    ["podcast-buheshiyi", "2026-05-28"],
     ["dw-trial", "2026-05-21"],
     ["cdt", "2026-05-07"],
     ["taz", "2026-04-14"],
@@ -1185,7 +1252,8 @@
     const query = state.query.trim().toLocaleLowerCase(locale);
     return sources[state.language].filter((source) => {
       const matchesFilter = state.filter === "all" || source.type === state.filter;
-      const haystack = `${source.title} ${source.displayTitle || ""} ${source.publisher} ${source.summary} ${source.note} ${source.typeLabel}`.toLocaleLowerCase(locale);
+      const highlightText = source.highlights?.map((item) => `${item.time} ${item.text}`).join(" ") || "";
+      const haystack = `${source.title} ${source.displayTitle || ""} ${source.publisher} ${source.summary} ${source.note} ${source.typeLabel} ${highlightText}`.toLocaleLowerCase(locale);
       return matchesFilter && (!query || haystack.includes(query));
     }).sort((a, b) => (sourceRank.get(a.id) ?? Number.MAX_SAFE_INTEGER) - (sourceRank.get(b.id) ?? Number.MAX_SAFE_INTEGER));
   }
@@ -1198,12 +1266,27 @@
       const titleTranslation = source.displayTitle && source.displayTitle !== source.title
         ? `<p class="source-title-translation">${escapeHtml(source.displayTitle)}</p>`
         : "";
+      const highlights = source.highlights?.length
+        ? `
+          <div class="source-highlights">
+            <h4>${escapeHtml(source.highlightsLabel)}</h4>
+            <ul>
+              ${source.highlights.map((item) => `
+                <li>
+                  <time>${escapeHtml(item.time)}</time>
+                  <span>${escapeHtml(item.text)}</span>
+                </li>
+              `).join("")}
+            </ul>
+          </div>
+        `
+        : "";
       const action = source.url
         ? `<a class="source-open" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHtml(`${strings.sourceLink}: ${displayTitle}`)}">${escapeHtml(source.wechatOnly ? strings.wechatSource : strings.readOriginal)} ↗</a>`
         : `<span class="source-static">${escapeHtml(strings.linkPending)}</span>`;
       const note = source.wechatOnly ? strings.wechatOnly : source.note;
       return `
-        <article class="source-card" data-source-id="${escapeHtml(source.id)}">
+        <article class="source-card${source.highlights?.length ? " source-card-featured" : ""}" data-source-id="${escapeHtml(source.id)}">
           <div class="source-meta">
             <span class="source-type ${escapeHtml(source.type)}">${escapeHtml(source.typeLabel)}</span>
             <time datetime="${escapeHtml(sourceDates.get(source.id) || "")}">${escapeHtml(source.date)}</time>
@@ -1212,6 +1295,7 @@
             <h3>${escapeHtml(source.title)}</h3>
             ${titleTranslation}
             <p>${escapeHtml(source.publisher)} · ${escapeHtml(source.summary)}</p>
+            ${highlights}
           </div>
           <p class="source-note">${escapeHtml(note)}</p>
           ${action}
