@@ -301,6 +301,10 @@ nav {
   flex-wrap: wrap;
 }
 
+.mission-origin-link {
+  align-self: flex-start;
+}
+
 .hero-manifesto {
   max-width: 100%;
   color: var(--muted);

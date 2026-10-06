@@ -5,7 +5,8 @@ Official bilingual website for The Unmuted, a safety and rights literacy platfor
 ## Website
 
 - Product beta: https://the-unmuted-beta.pages.dev/
-- Languages: English and Simplified Chinese
+- Main-site languages: English and Simplified Chinese
+- Case-archive languages: German, English, and Simplified Chinese
 - Contact: theunmuted@163.com
 
 The official site presents the current product features, the Safety–Practice–Record–Support framework, team and advisor roles, participated activities, media references, collaboration opportunities, acknowledgements, and nationwide support resources.
@@ -27,6 +28,7 @@ Then open http://127.0.0.1:8080/.
 - `site.js` — language switching and sharing behavior
 - `brand.md` — brand palette, typography, voice, and usage rules
 - `mark.png` and `logo.png` — brand assets
+- `case-archive/` — trilingual public-interest archive for the Germany drug-facilitated sexual-violence cases
 
 ## Product status
 
