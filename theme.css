@@ -2022,20 +2022,36 @@ html[data-language="zh"] strong {
   border-color: var(--border);
 }
 
-.media-card--wechat-mp {
-  flex-direction: row;
+.contact-wechat-card {
+  grid-column: 1 / -1;
+  display: flex;
   align-items: center;
   gap: 1rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(255, 143, 218, 0.24);
+  border-radius: var(--radius-sm);
+  background: rgba(26, 24, 53, 0.38);
 }
 
-.media-card--wechat-mp .media-card-copy {
+.contact-wechat-copy {
   display: flex;
   flex-direction: column;
   flex: 1;
   min-width: 0;
 }
 
-.media-card--wechat-mp .media-card-qr {
+.contact-wechat-copy strong {
+  margin-top: 0.35rem;
+  color: var(--foreground);
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.contact-wechat-copy .media-action {
+  margin-top: 0.35rem;
+}
+
+.contact-wechat-qr {
   width: 96px;
   height: 96px;
   flex-shrink: 0;
@@ -2149,14 +2165,6 @@ html[data-language="zh"] strong {
   padding-inline: 1rem;
   font-size: 0.86rem;
   white-space: nowrap;
-}
-
-.contact-email {
-  grid-column: 1 / -1;
-  color: var(--muted);
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.72rem;
-  text-align: center;
 }
 
 .thanks {
@@ -2321,11 +2329,6 @@ html[data-language="zh"] strong {
 
   .contact-actions {
     grid-template-columns: 1fr;
-  }
-
-  .contact-email {
-    grid-column: auto;
-    overflow-wrap: anywhere;
   }
 
   .thanks-grid {
