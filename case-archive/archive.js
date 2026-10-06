@@ -641,14 +641,16 @@
         date: "2026-05-28",
         publisher: "不合时宜 · 若含、王磬；嘉宾：孙谦、陈碧",
         title: "在德国法庭见证华人迷奸案的审判，我感到一种集体的愤怒",
-        summary: "以 5 月 20 日柏林庭审的现场观察为起点，讨论群组如何强化犯罪、不同法域的量刑理念、跨境追诉的现实条件，以及媒体保护受害者的责任。",
+        summary: "以 5 月 20 日柏林庭审的现场观察为起点，重点解释中文世界为何容易觉得德国刑期“过轻”：节目嘉宾把这种落差与中德对报应、限制国家刑罚权、社会复归及预防性拘禁的不同安排联系起来；同时讨论群组犯罪机制、跨境追诉条件与媒体责任。",
         note: "中文播客 · 1:18:29 · Apple Podcasts 原始节目",
         actionLabel: "收听播客",
-        highlightsLabel: "节目内容要点（按实际音频整理）",
+        highlightsLabel: "节目内容要点",
         highlights: [
           { time: "03:57–07:10", text: "孙谦与王磬回顾 5 月 20 日柏林庭审：约三十个旁听席很快坐满，不少华人女性到场；德语使用者自发翻译，并通过 Telegram 共享庭审记录。节目把这种到场描述为集体见证，也让彼此知道自己并不孤立。" },
           { time: "10:03–15:50", text: "陈碧与孙谦分析，群内的经验交换、暗语和认可可能降低实施与传播犯罪的心理门槛，并促成手法复制。这是嘉宾对群体机制的分析，不是法院认定。" },
-          { time: "17:57–33:20", text: "陈碧区分“解释犯罪”与“为犯罪开脱”，并讨论德国刑罚与预防性拘押的不同功能；节目提醒，不能脱离制度背景直接比较德国、中国和美国的刑期数字。" },
+          { time: "17:57–24:30", text: "陈碧区分“解释犯罪”与“为犯罪开脱”：分析个人经历、群体氛围或心理机制，是为了理解和预防犯罪，并不减少行为人应负的责任。" },
+          { time: "24:31–29:59", text: "陈碧以比较法解释中文世界为何容易觉得德国判刑“过轻”。她认为，中国与美国的刑罚直觉更强调报应和一次性较长刑期；德国战后刑法则更重视限制国家刑罚权、维护人格尊严与让服刑者重返社会，因此年轻、无前科及具有社会复归可能性等因素会明显影响固定刑期。这是节目嘉宾的制度比较，并非对所有案件量刑规则的完整概括。" },
+          { time: "30:00–33:06", text: "节目用“两层设计”说明德国并非只判较短刑期后直接释放：第一层是与罪责相对应的刑罚；第二层是刑罚之外的保安处分。若符合法定条件且持续危险性仍被认定，刑满后可能适用预防性拘禁（Sicherungsverwahrung）并继续限制自由。因此只比较判决中的年数，可能遗漏德国制裁体系的第二层；是否适用仍取决于个案裁判与法定条件。" },
           { time: "39:21–48:30", text: "对谈讨论被指发生在北京的行为能否在中国受到追诉，指出这取决于立案、证据、管辖、人员是否回国及跨境取证等条件，并不意味着追诉已经启动或必然发生。" },
           { time: "49:04–55:16", text: "节目把录制和传播行为理解为群体内部的炫耀、关注与地位奖励，并讨论这种回报为何可能压过对暴露的恐惧；这是分析而非确定的心理诊断。" },
           { time: "01:13:37–01:17:41", text: "节目主张让羞耻由受害者转向施害者，同时强调公开讲述不应成为衡量受害者勇气的标准。报道应减少不必要的作案细节，避免让熟人据此识别受害者。" }
@@ -849,14 +851,16 @@
         publisher: "Buheshiyi · Ruohan and Wang Qing; guests: Sun Qian and Chen Bi",
         title: "在德国法庭见证华人迷奸案的审判，我感到一种集体的愤怒",
         displayTitle: "Witnessing the trial of a Germany-based Chinese drug-facilitated sexual violence case, I felt a collective anger",
-        summary: "Starting with observations from the 20 May Berlin hearing, the episode examines group reinforcement of offending, sentencing across legal systems, practical limits on cross-border prosecution, and the media’s duty to protect survivors.",
+        summary: "Starting with observations from the 20 May Berlin hearing, the episode focuses on why German sentences can appear “too lenient” to Chinese audiences. The guest connects that reaction to different approaches to retribution, limits on state punishment, resocialisation, and preventive detention, while also discussing group-enabled offending, cross-border prosecution, and media responsibility.",
         note: "Chinese-language podcast · 1:18:29 · original episode on Apple Podcasts",
         actionLabel: "Listen to podcast",
-        highlightsLabel: "What the episode discusses (from the audio)",
+        highlightsLabel: "Episode content notes",
         highlights: [
           { time: "03:57–07:10", text: "Sun Qian and Wang Qing describe the 20 May Berlin hearing: roughly thirty public seats filled quickly, many Chinese women attended, German speakers translated voluntarily, and observers shared hearing notes through Telegram. They frame attendance as collective witnessing and a way to counter isolation." },
           { time: "10:03–15:50", text: "Chen Bi and Sun Qian analyse how advice, coded language, and peer approval inside groups may lower psychological barriers and encourage replication. The episode presents this as the guests’ analysis, not a judicial finding." },
-          { time: "17:57–33:20", text: "Chen Bi separates explaining offending from excusing it, then discusses the distinct roles of finite punishment and preventive detention in Germany. The episode cautions against comparing German, Chinese, and US sentence lengths without their legal context." },
+          { time: "17:57–24:30", text: "Chen Bi separates explaining offending from excusing it: examining personal history, group influence, or psychological mechanisms may support understanding and prevention, but does not diminish an offender’s responsibility." },
+          { time: "24:31–29:59", text: "Chen Bi offers a comparative-law explanation for why many Chinese listeners may experience German sentences as “too lenient.” In her comparison, Chinese and US penal thinking gives retribution and long, single-stage prison terms a more visible role; Germany’s post-war framework places greater weight on limiting state penal power, human dignity, and resocialisation. Youth, lack of prior convictions, and prospects of reintegration can therefore materially affect the determinate term. This is the guest’s comparative account, not a complete statement of every sentencing rule." },
+          { time: "30:00–33:06", text: "The guest describes Germany as using two tracks rather than simply imposing a short term and releasing the person: punishment proportionate to culpability, followed in qualifying cases by a separate preventive measure. If continuing dangerousness is established under the legal conditions, Sicherungsverwahrung may restrict liberty after the prison term. Comparing sentence years alone can therefore miss the second track; its use still depends on the individual judgment and statutory requirements." },
           { time: "39:21–48:30", text: "The speakers consider whether conduct alleged to have occurred in Beijing could be prosecuted in China. They identify case opening, evidence, jurisdiction, a person’s return, and cross-border evidence gathering as practical conditions—not proof that prosecution has begun or will occur." },
           { time: "49:04–55:16", text: "The conversation treats recording and circulation as possible sources of attention, status, and validation within the group, asking why those rewards might outweigh fear of detection. This is analysis rather than a definitive psychological diagnosis." },
           { time: "01:13:37–01:17:41", text: "The speakers call for shame to shift from survivors to perpetrators while stressing that public disclosure must never become a test of a survivor’s courage. Reporting should omit unnecessary operational detail and prevent acquaintances from identifying survivors." }
@@ -1009,14 +1013,16 @@
         publisher: "Buheshiyi · Ruohan und Wang Qing; Gäste: Sun Qian und Chen Bi",
         title: "在德国法庭见证华人迷奸案的审判，我感到一种集体的愤怒",
         displayTitle: "Als ich in Deutschland den Prozess zu einem Fall sexualisierter Gewalt unter Betäubung im chinesischen Umfeld miterlebte, empfand ich eine kollektive Wut",
-        summary: "Ausgehend von Beobachtungen bei der Berliner Verhandlung am 20. Mai behandelt die Folge gruppendynamische Verstärkung von Taten, Strafzumessung in verschiedenen Rechtssystemen, praktische Grenzen grenzüberschreitender Strafverfolgung und die Verantwortung der Medien gegenüber Betroffenen.",
+        summary: "Ausgehend von Beobachtungen bei der Berliner Verhandlung am 20. Mai erklärt die Folge insbesondere, weshalb deutsche Strafmaße einem chinesischen Publikum als „zu milde“ erscheinen können. Die Gästin verbindet diese Wahrnehmung mit unterschiedlichen Vorstellungen von Vergeltung, Begrenzung staatlicher Strafgewalt, Resozialisierung und Sicherungsverwahrung; außerdem geht es um gruppengestützte Taten, grenzüberschreitende Strafverfolgung und Medienverantwortung.",
         note: "Chinesischsprachiger Podcast · 1:18:29 · Originalfolge bei Apple Podcasts",
         actionLabel: "Podcast anhören",
-        highlightsLabel: "Themen der Folge (aus dem Audio)",
+        highlightsLabel: "Inhalte der Folge",
         highlights: [
           { time: "03:57–07:10", text: "Sun Qian und Wang Qing schildern die Berliner Verhandlung vom 20. Mai: Die rund dreißig Publikumsplätze waren rasch belegt, viele chinesische Frauen kamen, Deutschsprachige übersetzten freiwillig und Prozessnotizen wurden über Telegram geteilt. Die Anwesenheit wird als gemeinsames Zeugnis gegen Isolation beschrieben." },
           { time: "10:03–15:50", text: "Chen Bi und Sun Qian analysieren, wie Ratschläge, Codesprache und Anerkennung in Gruppen psychologische Hemmschwellen senken und Nachahmung fördern können. Dies ist eine Analyse der Gäste, keine gerichtliche Feststellung." },
-          { time: "17:57–33:20", text: "Chen Bi trennt die Erklärung von Taten von ihrer Entschuldigung und erläutert die unterschiedlichen Funktionen zeitiger Freiheitsstrafe und Sicherungsverwahrung in Deutschland. Die Folge warnt davor, Strafhöhen in Deutschland, China und den USA ohne Systemkontext direkt zu vergleichen." },
+          { time: "17:57–24:30", text: "Chen Bi trennt die Erklärung von Taten von ihrer Entschuldigung: Persönliche Vorgeschichte, Gruppeneinflüsse oder psychologische Mechanismen zu untersuchen kann Verständnis und Prävention dienen, mindert aber nicht die Verantwortung des Täters." },
+          { time: "24:31–29:59", text: "Chen Bi erläutert rechtsvergleichend, weshalb deutsche Strafmaße vielen chinesischen Zuhörenden als „zu milde“ erscheinen können. In ihrer Gegenüberstellung räumen chinesisches und US-amerikanisches Strafdenken Vergeltung und langen, einstufigen Freiheitsstrafen einen sichtbareren Stellenwert ein. Das deutsche Nachkriegsrecht betont stärker die Begrenzung staatlicher Strafgewalt, Menschenwürde und Resozialisierung; Jugend, fehlende Vorstrafen und Aussichten auf Wiedereingliederung können daher die zeitige Freiheitsstrafe erheblich beeinflussen. Dies ist die vergleichende Einordnung der Gästin, keine vollständige Darstellung sämtlicher Strafzumessungsregeln." },
+          { time: "30:00–33:06", text: "Die Gästin beschreibt die Zweispurigkeit des deutschen Sanktionenrechts: Neben der schuldangemessenen Strafe stehen eigenständige Maßregeln der Besserung und Sicherung. Wird fortbestehende Gefährlichkeit unter den gesetzlichen Voraussetzungen festgestellt, kann sich eine Sicherungsverwahrung an die Freiheitsstrafe anschließen. Wer nur die Zahl der Haftjahre vergleicht, übersieht daher möglicherweise diese zweite Spur; ihre Anwendung hängt weiterhin vom Einzelfall und den gesetzlichen Voraussetzungen ab." },
           { time: "39:21–48:30", text: "Das Gespräch erörtert, ob mutmaßlich in Peking begangene Taten in China strafrechtlich verfolgt werden könnten. Genannt werden die Einleitung eines Ermittlungsverfahrens, Beweislage, Zuständigkeit, Rückkehr der beschuldigten Person und grenzüberschreitende Beweiserhebung – nicht, dass eine Verfolgung bereits begonnen hat oder sicher erfolgen wird." },
           { time: "49:04–55:16", text: "Aufnahmen und ihre Verbreitung werden als mögliche Quelle von Aufmerksamkeit, Status und Bestätigung innerhalb der Gruppe analysiert; diskutiert wird, warum diese Belohnung die Angst vor Entdeckung überwiegen könnte. Es handelt sich nicht um eine abschließende psychologische Diagnose." },
           { time: "01:13:37–01:17:41", text: "Die Gesprächsrunde fordert, Scham von den Betroffenen auf die Täter zu verlagern, betont aber zugleich: Öffentliches Sprechen darf nie zum Maßstab für den Mut einer betroffenen Person werden. Berichte sollen unnötige Tatdetails vermeiden und eine Identifizierung durch Bekannte verhindern." }
@@ -1272,17 +1278,19 @@
         : "";
       const highlights = source.highlights?.length
         ? `
-          <div class="source-highlights">
-            <h4>${escapeHtml(source.highlightsLabel)}</h4>
-            <ul>
-              ${source.highlights.map((item) => `
-                <li>
-                  <time>${escapeHtml(item.time)}</time>
-                  <span>${escapeHtml(item.text)}</span>
-                </li>
-              `).join("")}
-            </ul>
-          </div>
+          <details class="source-highlights">
+            <summary>${escapeHtml(source.highlightsLabel)}</summary>
+            <div class="source-highlights-panel">
+              <ul>
+                ${source.highlights.map((item) => `
+                  <li>
+                    <time>${escapeHtml(item.time)}</time>
+                    <span>${escapeHtml(item.text)}</span>
+                  </li>
+                `).join("")}
+              </ul>
+            </div>
+          </details>
         `
         : "";
       const actionLabel = source.actionLabel || (source.wechatOnly ? strings.wechatSource : strings.readOriginal);
