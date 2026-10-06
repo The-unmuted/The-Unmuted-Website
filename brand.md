@@ -1,6 +1,6 @@
 # Brand — The Unmuted / 非默
 
-A bilingual safety and rights literacy platform for women that turns legal knowledge and safety resources into practical action before, during, and after harm through four stages: Safety, Practice, Record, and Support.
+A trilingual safety and rights literacy platform for women that turns legal knowledge and safety resources into practical action before, during, and after harm through four stages: Safety, Practice, Record, and Support.
 
 _Established from the current beta product UI on 2026-08-30._
 
@@ -72,7 +72,7 @@ Example:
 
 > Learn your rights. Practice difficult choices. Know what to do before you need to do it.
 
-The website offers English and Simplified Chinese through a persistent language switch. Show one language at a time; do not stack English and Chinese translations in the same component.
+The website offers English, Simplified Chinese, and German through a persistent language switch. Show one language at a time; do not stack translations in the same component.
 
 ## Usage rules
 

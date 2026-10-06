@@ -1743,6 +1743,10 @@ html[data-language="zh"] body {
   font-family: "Noto Sans SC", "Outfit", system-ui, sans-serif;
 }
 
+html[data-language="de"] body {
+  font-family: "Outfit", system-ui, sans-serif;
+}
+
 /* Chinese line-break rules — do not split within a word / phrase.
    keep-all lets the browser only break at punctuation & spaces (never
    mid-word), and .nb wraps a specific phrase to force it onto one line

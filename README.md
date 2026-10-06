@@ -1,6 +1,6 @@
 # The Unmuted — Official Website
 
-Official bilingual website for The Unmuted, a safety and rights literacy platform for women. The platform turns legal knowledge and safety resources into practical action before, during, and after harm through four stages: Safety, Practice, Record, and Support.
+Official trilingual website for The Unmuted, a safety and rights literacy platform for women. The platform turns legal knowledge and safety resources into practical action before, during, and after harm through four stages: Safety, Practice, Record, and Support.
 
 ## Website
 
