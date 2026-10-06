@@ -303,6 +303,18 @@ nav {
 
 .mission-origin-link {
   align-self: flex-start;
+  border-color: var(--violet-accent);
+  background: var(--violet-accent);
+  color: var(--primary-ink);
+  box-shadow: 0 0 24px rgba(168, 121, 255, 0.24);
+}
+
+.mission-origin-link:hover {
+  border-color: var(--violet-mid);
+  background: var(--violet-mid);
+  color: var(--primary-ink);
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px rgba(168, 121, 255, 0.32);
 }
 
 .hero-manifesto {
