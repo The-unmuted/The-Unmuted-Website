@@ -204,7 +204,7 @@
       ctaShare: "Share The Unmuted",
       footerTagline: "A trilingual safety and rights literacy platform for women, primarily serving mainland China.",
       footerCopyright: "© 2026 The Unmuted. All rights reserved.",
-      footerContact: "Get in touch",
+      footerContact: "Contact us",
       footerArchive: "Case archive",
       footerBeta: "Open the beta",
       githubAria: "The Unmuted official website on GitHub",
