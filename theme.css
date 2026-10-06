@@ -1946,9 +1946,13 @@ html[data-language="zh"] strong {
   grid-column: 1 / -1;
 }
 
+.features-grid > .feature-card:last-child .feature-body {
+  width: 100%;
+  max-width: none;
+}
+
 @media (min-width: 901px) {
   html[data-language="zh"] .features-grid > .feature-card:last-child .feature-body {
-    max-width: none;
     white-space: nowrap;
   }
 }
