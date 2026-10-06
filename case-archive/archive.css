@@ -1031,18 +1031,54 @@ summary:focus-visible {
 
 .source-highlights {
   margin-top: 18px;
-  padding-top: 14px;
-  border-top: 1px solid var(--border-soft);
 }
 
-.source-highlights h4 {
-  margin: 0 0 12px;
-  color: var(--muted-strong);
-  font-size: 0.72rem;
+.source-highlights summary {
+  width: fit-content;
+  min-height: 40px;
+  padding: 0 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--primary);
+  cursor: pointer;
+  font-size: 0.74rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
   line-height: 1.5;
-  text-transform: uppercase;
+  list-style: none;
+  transition: border-color 120ms ease-out, background-color 120ms ease-out;
+}
+
+.source-highlights summary::-webkit-details-marker {
+  display: none;
+}
+
+.source-highlights summary::after {
+  content: "+";
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.9rem;
+}
+
+.source-highlights[open] summary::after {
+  content: "−";
+}
+
+.source-highlights summary:hover {
+  border-color: var(--primary);
+  background: var(--primary-soft);
+}
+
+.source-highlights summary:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+
+.source-highlights-panel {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-soft);
 }
 
 .source-highlights ul {
