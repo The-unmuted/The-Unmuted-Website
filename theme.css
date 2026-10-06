@@ -1923,6 +1923,19 @@ html[data-language="zh"] strong {
   align-items: start;
 }
 
+.features-grid > .feature-practice .span2-text,
+.features-grid > .feature-practice .feature-body {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+}
+
+@media (max-width: 900px) {
+  .features-grid > .feature-practice {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 .features-grid > .feature-safeguard {
   background:
     radial-gradient(circle at 78% 20%, rgba(168, 121, 255, 0.14), transparent 15rem),
