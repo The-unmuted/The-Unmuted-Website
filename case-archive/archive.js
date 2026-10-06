@@ -643,6 +643,7 @@
         title: "在德国法庭见证华人迷奸案的审判，我感到一种集体的愤怒",
         summary: "以 5 月 20 日柏林庭审的现场观察为起点，讨论群组如何强化犯罪、不同法域的量刑理念、跨境追诉的现实条件，以及媒体保护受害者的责任。",
         note: "中文播客 · 1:18:29 · Apple Podcasts 原始节目",
+        actionLabel: "收听播客",
         highlightsLabel: "节目内容要点（按实际音频整理）",
         highlights: [
           { time: "03:57–07:10", text: "孙谦与王磬回顾 5 月 20 日柏林庭审：约三十个旁听席很快坐满，不少华人女性到场；德语使用者自发翻译，并通过 Telegram 共享庭审记录。节目把这种到场描述为集体见证，也让彼此知道自己并不孤立。" },
@@ -850,6 +851,7 @@
         displayTitle: "Witnessing the trial of a Germany-based Chinese drug-facilitated sexual violence case, I felt a collective anger",
         summary: "Starting with observations from the 20 May Berlin hearing, the episode examines group reinforcement of offending, sentencing across legal systems, practical limits on cross-border prosecution, and the media’s duty to protect survivors.",
         note: "Chinese-language podcast · 1:18:29 · original episode on Apple Podcasts",
+        actionLabel: "Listen to podcast",
         highlightsLabel: "What the episode discusses (from the audio)",
         highlights: [
           { time: "03:57–07:10", text: "Sun Qian and Wang Qing describe the 20 May Berlin hearing: roughly thirty public seats filled quickly, many Chinese women attended, German speakers translated voluntarily, and observers shared hearing notes through Telegram. They frame attendance as collective witnessing and a way to counter isolation." },
@@ -1009,6 +1011,7 @@
         displayTitle: "Als ich in Deutschland den Prozess zu einem Fall sexualisierter Gewalt unter Betäubung im chinesischen Umfeld miterlebte, empfand ich eine kollektive Wut",
         summary: "Ausgehend von Beobachtungen bei der Berliner Verhandlung am 20. Mai behandelt die Folge gruppendynamische Verstärkung von Taten, Strafzumessung in verschiedenen Rechtssystemen, praktische Grenzen grenzüberschreitender Strafverfolgung und die Verantwortung der Medien gegenüber Betroffenen.",
         note: "Chinesischsprachiger Podcast · 1:18:29 · Originalfolge bei Apple Podcasts",
+        actionLabel: "Podcast anhören",
         highlightsLabel: "Themen der Folge (aus dem Audio)",
         highlights: [
           { time: "03:57–07:10", text: "Sun Qian und Wang Qing schildern die Berliner Verhandlung vom 20. Mai: Die rund dreißig Publikumsplätze waren rasch belegt, viele chinesische Frauen kamen, Deutschsprachige übersetzten freiwillig und Prozessnotizen wurden über Telegram geteilt. Die Anwesenheit wird als gemeinsames Zeugnis gegen Isolation beschrieben." },
@@ -1230,8 +1233,9 @@
     const strings = pageCopy[language];
     timelineList.innerHTML = timeline[language].map((item) => {
       const source = sourceLookup.get(item.sourceId);
+      const sourceActionLabel = source?.actionLabel || (source?.wechatOnly ? strings.wechatSource : strings.readOriginal);
       const sourceAction = source?.url
-        ? `<a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.wechatOnly ? strings.wechatSource : strings.readOriginal)} ↗</a>`
+        ? `<a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(sourceActionLabel)} ↗</a>`
         : `<a href="#sources">${escapeHtml(source?.publisher || strings.sourceUnavailable)} ↓</a>`;
       return `
         <li class="timeline-item">
@@ -1281,8 +1285,9 @@
           </div>
         `
         : "";
+      const actionLabel = source.actionLabel || (source.wechatOnly ? strings.wechatSource : strings.readOriginal);
       const action = source.url
-        ? `<a class="source-open" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHtml(`${strings.sourceLink}: ${displayTitle}`)}">${escapeHtml(source.wechatOnly ? strings.wechatSource : strings.readOriginal)} ↗</a>`
+        ? `<a class="source-open" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHtml(`${actionLabel}: ${displayTitle}`)}">${escapeHtml(actionLabel)} ↗</a>`
         : `<span class="source-static">${escapeHtml(strings.linkPending)}</span>`;
       const note = source.wechatOnly ? strings.wechatOnly : source.note;
       return `
