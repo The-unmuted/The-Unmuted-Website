@@ -164,6 +164,16 @@
       contactTitle: "Start a conversation with the team.",
       contactBody: "For partnerships, research, legal review, media, or community collaboration, tell us what you are working on and where our work may connect.",
       emailTeam: "Email the team",
+      emailChooserKicker: "Send an email",
+      emailChooserTitle: "Choose your email service",
+      emailChooserBody: "Open your email app or continue in Gmail or Outlook. You can review the message before sending.",
+      emailNative: "Open email app",
+      emailGmail: "Continue with Gmail",
+      emailOutlook: "Continue with Outlook",
+      emailCopy: "Copy email address",
+      emailCopied: "Email address copied.",
+      emailCopyFailed: "Could not copy the address. Please use theunmuted@163.com.",
+      emailCloseAria: "Close email options",
       visitRednote: "Visit Rednote",
       visitWechatArticle: "Open WeChat account",
       thanksTag: "Special thanks",
@@ -379,6 +389,16 @@
       contactTitle: "和团队开启一次对话。",
       contactBody: "无论是合作伙伴、研究、法律审阅、媒体还是社区合作，请告诉我们妳正在做什么，<span class=\"nb\">以及彼此可以如何连接</span>。",
       emailTeam: "发送邮件",
+      emailChooserKicker: "发送邮件",
+      emailChooserTitle: "选择发送方式",
+      emailChooserBody: "使用设备上的邮件应用，或在 Gmail、Outlook 中继续。发送前妳仍可以检查和编辑邮件。",
+      emailNative: "打开邮件应用",
+      emailGmail: "使用 Gmail",
+      emailOutlook: "使用 Outlook",
+      emailCopy: "复制邮箱地址",
+      emailCopied: "邮箱地址已复制。",
+      emailCopyFailed: "无法自动复制，请使用 theunmuted@163.com。",
+      emailCloseAria: "关闭邮件选项",
       visitRednote: "访问小红书",
       visitWechatArticle: "进入公众号",
       thanksTag: "特别感谢",
@@ -594,6 +614,16 @@
       contactTitle: "Ein Gespräch mit dem Team beginnen.",
       contactBody: "Für Partnerschaften, Forschung, rechtliche Prüfung, Medien- oder Community-Kooperationen: Erzähl uns, woran du arbeitest und wo sich unsere Arbeit verbinden kann.",
       emailTeam: "Team per E-Mail kontaktieren",
+      emailChooserKicker: "E-Mail senden",
+      emailChooserTitle: "E-Mail-Dienst auswählen",
+      emailChooserBody: "Öffne deine E-Mail-App oder fahre in Gmail oder Outlook fort. Du kannst die Nachricht vor dem Senden prüfen und bearbeiten.",
+      emailNative: "E-Mail-App öffnen",
+      emailGmail: "Mit Gmail fortfahren",
+      emailOutlook: "Mit Outlook fortfahren",
+      emailCopy: "E-Mail-Adresse kopieren",
+      emailCopied: "E-Mail-Adresse kopiert.",
+      emailCopyFailed: "Die Adresse konnte nicht kopiert werden. Bitte verwende theunmuted@163.com.",
+      emailCloseAria: "E-Mail-Optionen schließen",
       visitRednote: "Rednote besuchen",
       visitWechatArticle: "WeChat-Account öffnen",
       thanksTag: "Besonderer Dank",
@@ -654,6 +684,11 @@
   const shareStatus = document.getElementById("share-status");
   const shareModal = document.getElementById("share-modal");
   const shareModalCopyButton = document.getElementById("share-modal-copy");
+  const emailButton = document.getElementById("email-team");
+  const emailDialog = document.getElementById("email-dialog");
+  const emailDialogClose = document.getElementById("email-dialog-close");
+  const emailCopyButton = document.getElementById("email-copy");
+  const emailStatus = document.getElementById("email-status");
   const themeSongToggle = document.getElementById("theme-song-toggle");
   const themeSongPanel = document.getElementById("theme-song-panel");
   const siteData = window.UNMUTED_SITE_DATA || {};
@@ -716,6 +751,7 @@
     });
 
     if (shareStatus) shareStatus.textContent = "";
+    if (emailStatus) emailStatus.textContent = "";
 
     if (persist) {
       try {
@@ -763,6 +799,36 @@
     document.execCommand("copy");
     temporaryInput.remove();
     return Promise.resolve();
+  }
+
+  if (emailButton && emailDialog) {
+    emailButton.addEventListener("click", () => {
+      if (emailStatus) emailStatus.textContent = "";
+      emailDialog.showModal();
+    });
+
+    emailDialog.addEventListener("close", () => {
+      if (emailStatus) emailStatus.textContent = "";
+      emailButton.focus();
+    });
+  }
+
+  if (emailDialogClose && emailDialog) {
+    emailDialogClose.addEventListener("click", () => emailDialog.close());
+  }
+
+  if (emailCopyButton && emailStatus) {
+    emailCopyButton.addEventListener("click", async () => {
+      const language = ["en", "zh", "de"].includes(root.dataset.language) ? root.dataset.language : "en";
+      const strings = copy[language];
+
+      try {
+        await copyToClipboard("theunmuted@163.com");
+        emailStatus.textContent = strings.emailCopied;
+      } catch (_) {
+        emailStatus.textContent = strings.emailCopyFailed;
+      }
+    });
   }
 
   function openShareModal() {

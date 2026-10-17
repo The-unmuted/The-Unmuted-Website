@@ -2252,6 +2252,88 @@ html[data-language="zh"] strong {
   white-space: nowrap;
 }
 
+.email-dialog {
+  width: min(440px, calc(100% - 2rem));
+  max-width: none;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--foreground);
+}
+
+.email-dialog::backdrop {
+  background: rgba(6, 6, 20, 0.72);
+  backdrop-filter: blur(4px);
+}
+
+.email-dialog-panel {
+  position: relative;
+  padding: 2rem 1.5rem 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(circle at 100% 0, rgba(168, 121, 255, 0.14), transparent 14rem),
+    var(--surface);
+  box-shadow: var(--shadow-panel);
+}
+
+.email-dialog-panel h3 {
+  margin-top: 0.45rem;
+  color: var(--foreground);
+  font-size: 1.45rem;
+  line-height: 1.2;
+}
+
+.email-dialog-panel > p {
+  margin-top: 0.65rem;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.email-dialog-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--surface-raised);
+  color: var(--muted-strong);
+  font: inherit;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: border-color 100ms ease-out, color 100ms ease-out, background-color 100ms ease-out;
+}
+
+.email-dialog-actions {
+  margin-top: 1.25rem;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.email-dialog-actions .btn-hero,
+.email-dialog-actions .btn-hero-outline {
+  width: 100%;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.email-dialog-panel > .email-status {
+  min-height: 1.5rem;
+  margin-top: 0.75rem;
+  color: var(--success);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
 .thanks {
   border-top: 1px solid var(--border-soft);
 }
